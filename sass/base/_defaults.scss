@@ -1,0 +1,127 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: $white;
+  position: relative;
+  letter-spacing: 0.03em;
+}
+
+.page {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-style: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  font-family: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+
+}
+
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+hr {
+  border-color: $bg-main-color;
+}
+
+//* two space between columns
+//* it`s a column in a mobile, a row in a tablet
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @media screen and (min-width: $tablet) {
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .first-column {
+    max-width: 780%;
+    display: flex;
+    align-self: start;
+    margin-bottom: 44px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0;
+      flex-basis: 35%;
+    }
+  }
+
+  .second-column {
+    max-width: 80%;
+    display: flex;
+    align-self: end;
+    @media screen and (min-width: $tablet) {
+      align-self: center;
+      flex-basis: 35%;
+    }
+  }
+}
+
+.mobile-only {
+  display: block;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.tablet-only {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+}
+
+.hided {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

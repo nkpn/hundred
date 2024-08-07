@@ -1,0 +1,12 @@
+@mixin subheading{
+    font-family: Kaisei Decol;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 37px;
+    color: $text-primary-color;
+
+    @media screen and (min-width:$tablet) {
+        font-size: 36px;
+        line-height: 48px;
+    }
+}
