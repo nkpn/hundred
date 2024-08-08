@@ -1,4 +1,7 @@
-//-------------------------------
-//* HEADER
+// HEADER
 header {
+    h1, p {
+        font-family: $font;
+        color: $black;
+    }
 }

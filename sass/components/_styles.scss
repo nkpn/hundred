@@ -1,0 +1,93 @@
+// text elements styles
+h1,
+.title-xl {
+    font-family: $font;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -2%;
+    font-weight: 600;
+    color: $text;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 60px;
+        line-height: 72px;
+    }
+}
+
+.title-lg,
+.lead-form-title {
+    font-family: $font;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -2%;
+    font-weight: 600;
+    color: $text;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 48px;
+        line-height: 60px;
+    }
+}
+
+h2,
+.title-md,
+.carousel-title {
+    font-family: $font;
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 600;
+    color: $text;
+    letter-spacing: -2%;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 60px;
+        line-height: 48px;
+    }
+}
+
+.text {
+    font-family: $font;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: $textSecondary;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+.text-lg {
+    font-family: $font;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    color: $textSecondary;
+}
+
+.text-md {
+    font-family: $font;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $textSecondary;
+}
+
+.text-sm {
+    font-family: $font;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: $blue;
+}
+
+// font styles
+
+.italic {
+    font-style: italic;
+}
+
+.semibold {
+    font-weight: 600;
+}
