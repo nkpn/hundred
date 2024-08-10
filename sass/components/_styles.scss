@@ -91,3 +91,95 @@ h2,
 .semibold {
     font-weight: 600;
 }
+
+
+.logo a {
+    font-family: $font;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.navigation-link {
+    font-family: $font;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    color: $text;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 16px;
+        line-height: 24px;
+        color: $textSecondary;
+    }
+}
+
+
+// CTA Button
+.button-cta {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 8px;
+    font-family: $font;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    background-color: $blue;
+    color: $white;
+
+    &:hover, &:focus {
+        background-color: $blueHover;
+    }
+
+
+    @media screen and (min-width: $tablet) {
+        width: auto;
+        padding: 12px 20px;
+     }
+    img {
+        pointer-events: none;
+        margin-left: 8px;
+        width: 11.6px;
+        height: 11.6px;
+    }
+}
+// Scroll To Top button
+.scroll-top-btn {
+    padding: 17px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    display: block;
+    position: absolute;
+    bottom: 120px;
+    right: 16px;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 21px;
+        right: 40px;
+        bottom: 156px;
+    }
+
+    img {
+        width: 14px; 
+        height: 14px;
+    }
+}
+
+
+// General flex wrapper
+.two-columns-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $desktop) { 
+        flex-direction: row;
+    }
+}
+

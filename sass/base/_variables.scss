@@ -5,9 +5,13 @@ $textSecondary: #475467;
 $white: #ffffff;
 $black: #000000;
 $blue: #4E6CFF;
+$blueHover: #7088FF;
 $blueLight: #EEF1FF;
 $blueGray: #475467;
 $gray: #D0D5DD;
+$grayLightText: #667085;
+$grayLightMobileBG: #F9FAFB;
+$grayBorder: #F2F4F7;
 
 $font: "Inter", sans-serif;
 
@@ -20,5 +24,5 @@ $tablet: 768px;
 $mobile: 375px;
 
 // Animation
-$animation-duration: 250ms;
-$animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$animation-duration: 300ms;
+$header-menu-animation: cubic-bezier(1, 0, 0, 1);
