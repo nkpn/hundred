@@ -393,6 +393,7 @@ header .mobile-menu {
   height: calc(100% - 73px);
   z-index: 100;
   flex-direction: column;
+  background-color: #ffffff;
   opacity: 0;
   max-height: 0;
   transition: opacity 300ms ease, max-height 300ms ease;

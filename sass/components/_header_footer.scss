@@ -32,6 +32,7 @@ header {
         height: calc( 100% - 73px); //100% - mobile header height
         z-index: 100;
         flex-direction: column;
+        background-color: $white;
         opacity: 0; // for animation
         max-height: 0; // for animation
         transition: opacity $animation-duration ease, max-height $animation-duration ease; // animation
