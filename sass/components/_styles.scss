@@ -4,7 +4,7 @@ h1,
     font-family: $font;
     font-size: 36px;
     line-height: 44px;
-    letter-spacing: -2%;
+    letter-spacing: -0.02em;;
     font-weight: 600;
     color: $text;
 
@@ -19,7 +19,7 @@ h1,
     font-family: $font;
     font-size: 36px;
     line-height: 44px;
-    letter-spacing: -2%;
+    letter-spacing: -0.02em;;
     font-weight: 600;
     color: $text;
 
@@ -37,12 +37,35 @@ h2,
     line-height: 38px;
     font-weight: 600;
     color: $text;
-    letter-spacing: -2%;
+    letter-spacing: -0.02em;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 48px;
+        line-height: 60px;
+    }
+}
+
+.display-xl {
+    font-family: $font;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 600;
+    color: $blue;
+    letter-spacing: -0.02em;
 
     @media screen and (min-width: $tablet) {
         font-size: 60px;
-        line-height: 48px;
+        line-height: 72px;
     }
+}
+
+.display-md {
+    font-family: $font;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 600;
+    color: $text;
+    letter-spacing: -0.02em;
 }
 
 .text {
@@ -63,7 +86,7 @@ h2,
     font-size: 18px;
     line-height: 28px;
     font-weight: 500;
-    color: $textSecondary;
+    color: $text;
 }
 
 .text-md {
@@ -128,9 +151,14 @@ h2,
     font-weight: 500;
     background-color: $blue;
     color: $white;
+    text-align: center;
 
     &:hover, &:focus {
         background-color: $blueHover;
+    }
+
+    &:active {
+        background-color: $blueActive;
     }
 
 
@@ -183,3 +211,41 @@ h2,
     }
 }
 
+.three-columns {
+    display: grid;
+    gap: 64px;
+    grid-template-columns: 1fr;
+
+    @media screen and (min-width: $desktop) { 
+        grid-template-columns: repeat(3, 1fr);
+        gap: unset;
+        row-gap: 32px;
+        column-gap: 64px;
+    }
+}
+
+.four-columns {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr;
+
+    @media screen and (min-width: $tablet) { 
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: $desktop) { 
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+.badge {
+    padding: 4px 12px;
+    border-radius: 16px;
+    background-color: $blueLight;
+    color: $blue;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: max-content;
+}

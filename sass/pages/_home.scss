@@ -1,0 +1,175 @@
+// Default sections paddings 
+.section {
+    .container {
+        padding-top: 64px;
+        padding-bottom: 64px;
+
+        @media screen and (min-width: $desktop) {
+            padding-top: 96px;
+            padding-bottom: 96px;
+        }
+    }
+}
+
+.hero {
+    .hero-img-wrapper {
+        margin-top: 64px;
+
+        @media screen and (min-width: $tablet) {
+            padding: 0 48px;
+    }
+
+        @media screen and (min-width: $desktop) {
+                padding: 0 104px;
+        }
+    }
+}
+
+// Reusable section
+.text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .badge {
+        margin-bottom: 16px;
+    }
+
+    h1, h2, h3, h4 {
+        margin-bottom: 16px;
+        text-align: center;
+        @media screen and (min-width: $desktop) {
+           margin-bottom: 24px;
+        }
+    }
+
+    .text {
+        margin-bottom: 32px;
+        text-align: center;
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 48px;
+            max-width: 60%;
+         }
+    }
+}
+
+.news {
+    background-color: $grayLightMobileBG;
+   
+    .slide {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (min-width: $tablet) {
+                padding: 0 48px;
+        }
+
+        @media screen and (min-width: $desktop) {
+                padding: 0 104px;
+        }
+
+        .slide-icon {
+            width: 234px;
+            margin-bottom: 32px;
+        }
+
+        h3 {
+            margin-bottom: 32px;
+        }
+
+        .source {
+            margin-bottom: 4px;
+        }
+
+        .caption {
+            margin-bottom: 32px;
+        }
+    }
+}
+
+.about-us {
+
+    .text-section .text {
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 64px;
+        }
+    }
+    .about-us-img-wrapper {
+        display: flex;
+        justify-content: center;
+
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 46px;
+        }
+
+        img {
+            max-width: 800px;
+            display: block;
+            box-shadow: rgba(16, 24, 40, 0.14);
+        }
+    }
+
+    .highlights {
+       .highglight-item {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+
+        // custom gap between 2nd and 3rd items on desktop
+        @media screen and (min-width:$desktop) {
+            &:nth-of-type(2) {
+                margin-right: 16px;
+            }
+            &:nth-of-type(3) {
+                margin-left: 16px;
+            }
+        }
+
+
+        .display-xl {
+            margin-bottom: 12px;
+        }
+        .text-lg {
+            margin-bottom: 8px;
+        }
+        .text-md {
+            color: $blueGray;
+        }
+       } 
+    }
+}
+
+.features {
+    background-color: $grayLightMobileBG;
+    .text-section .text {
+        margin-bottom: 64px;
+    }
+
+    .features-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        .icon-border {
+            padding: 8px;
+            border: 1px solid $blueLight;
+            margin-bottom: 20px;
+        }
+        
+        .icon-wrapper {
+            background-color: $blueLight;
+            border-radius: 50%;
+            width: 40px;
+
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+      
+    }
+}

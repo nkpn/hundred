@@ -14,8 +14,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     /> -->
-    <!-- <link rel="stylesheet" href="./sass/slick.css" />
-    <link rel="stylesheet" href="./sass/slick-theme.css" /> -->
+    <link rel="stylesheet" href="./sass/slick.css" />
+    <link rel="stylesheet" href="./sass/slick-theme.css" />
     <link rel="stylesheet" href="./sass/main.css" />
   </head>
 
@@ -67,12 +67,178 @@
 
     <main>
 
-      <!-- Scroll to top button -->
-      <div class="scroll-top-btn">
-          <img src="./icons/arrow-up.svg" alt="Scroll to top">
-       </div>
+      <!-- HERO Section -->
+       <seciton class="section hero">
+        <div class="container">
+          <div class="text-section">
+            <div class="badge">
+              <p class="text-sm">Title goes here</p>
+            </div>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p class="text">Donec at mauris nunc. Curabitur non congue sapien, sit amet vestibulum libero. Mauris neque sem, mattis non nibh in, porta lobortis quam.</p>
+            <a href="#" class="button-cta">Button CTA <img src="./icons/arrow-right.svg" alt="button"></a>
+          </div>
+          <div class="hero-img-wrapper">
+            <img class="hero-img" src="./images/hero-image-DELETE.png" alt="Hero Image">
+          </div>
+        </div>
+       </seciton>
+      <!-- End of HERO Section -->
+
+      <!-- News Carousel Section -->
+        <section class="section news">
+          <div class="container">
+            <div class="carousel">
+              <!-- 1st slide -->
+              <div class="slide">
+                <img src="./icons/NYT-icon.svg" alt="NY Times" class="slide-icon">
+                <h2 class="carousel-title">Nulla sed diam ornare, porta risus ut, hendrerit nibh. Cras sit amet accumsan velit, et iaculis justo.</h2>
+                <p class="text-lg source">Source name</p>
+                <p class="text-md caption">Caption</p>
+              </div>
+              <!-- 2nd slide -->
+              <div class="slide">
+                <img src="./icons/NYT-icon.svg" alt="NY Times" class="slide-icon">
+                <h2 class="carousel-title">Nulla sed diam ornare, porta risus ut, hendrerit nibh. Cras sit amet accumsan velit, et iaculis justo.</h2>
+                <p class="text-lg source">Source name</p>
+                <p class="text-md caption">Caption</p>
+              </div>
+              <!-- 3rd slide -->
+              <div class="slide">
+                <img src="./icons/NYT-icon.svg" alt="NY Times" class="slide-icon">
+                <h2 class="carousel-title">Nulla sed diam ornare, porta risus ut, hendrerit nibh. Cras sit amet accumsan velit, et iaculis justo.</h2>
+                <p class="text-lg source">Source name</p>
+                <p class="text-md caption">Caption</p>
+              </div>
+            </div>
+            <!-- Custom slider buttons -->
+            <div class="carousel-buttons">
+              <div class="slider-left">
+                <img src="./icons/slider-left.svg" alt="Previous slide">
+              </div>
+              <div class="slider-right">
+                <img src="./icons/slider-right.svg" alt="Next slide">
+              </div>
+            </div>
+          </div>
+        </section>
+      <!-- End of News Carousel Section -->
+
+      <!-- About Us section -->
+       <section class="section about-us">
+        <div class="container">
+          <div class="text-section">
+            <div class="badge">
+              <p class="text-sm">Title goes here</p>
+            </div>
+            <h3>Nullam iaculis, ipsum ac ullamcorper molestie</h3>
+            <p class="text">Donec at mauris nunc. Curabitur non congue sapien, sit amet vestibulum libero. Mauris neque sem, mattis non nibh in, porta lobortis quam.</p>
+          </div>
+          <div class="about-us-img-wrapper">
+            <img src="./images/about-us-image-DELETE.png" alt="section image">
+          </div>
+          <div class="four-columns highlights">
+            <!-- I -->
+            <div class="highglight-item">
+              <h4 class="display-xl">4,000+</h4>
+              <p class="text-lg">Lorem ipsum dolor</p>
+              <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus.</p>
+            </div>
+            <!-- II -->
+            <div class="highglight-item">
+              <h4 class="display-xl">600%</h4>
+              <p class="text-lg">Lorem ipsum dolor</p>
+              <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus.</p>
+            </div>
+            <!-- III -->
+            <div class="highglight-item">
+              <h4 class="display-xl">10k</h4>
+              <p class="text-lg">Lorem ipsum dolor</p>
+              <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus.</p>
+            </div>
+            <!-- IV -->
+            <div class="highglight-item">
+              <h4 class="display-xl">200+</h4>
+              <p class="text-lg">Lorem ipsum dolor</p>
+              <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus.</p>
+            </div>
+          </div>
+        </div>
+       </section>
+      <!-- End of About Us section -->
+
+      <!-- Features Section -->
+       <section class="section features">
+        <div class="container">
+          <div class="text-section">
+            <div class="badge">
+              <p class="text-sm">Title goes here</p>
+            </div>
+            <h4 class="display-md">Lorem ipsum dolor sit amet</h4>
+            <p class="text">Donec at mauris nunc. Curabitur non congue sapien, sit amet vestibulum libero. Mauris neque sem, mattis non nibh in, porta lobortis quam.</p>
+          </div>
+          <div class="three-columns features-list">
+            <!-- I -->
+            <div class="features-item">
+              <div class="icon-wrapper">
+                <img src="./icons/default-icon.svg" alt="Feature">
+              </div>
+              <p class="text">Cras non lacus ultricies</p>
+              <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus. Nullam sodales nibh elit. Curabitur sit amet arcu nec tellus elementum.</p>
+            </div>
+             <!-- II -->
+             <div class="features-item">
+              <div class="icon-wrapper">
+                <img src="./icons/default-icon.svg" alt="Feature">
+              </div>
+              <p class="text">Praesent pretium faucibus ligula</p>
+              <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus. Nullam sodales nibh elit. Curabitur sit amet arcu nec tellus elementum.</p>
+            </div>
+             <!-- III -->
+             <div class="features-item">
+              <div class="icon-wrapper">
+                <img src="./icons/default-icon.svg" alt="Feature">
+              </div>
+              <p class="text">Integer porta congue diam</p>
+              <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus. Nullam sodales nibh elit. Curabitur sit amet arcu nec tellus elementum.</p>
+            </div>
+             <!-- IV -->
+             <div class="features-item">
+              <div class="icon-wrapper">
+                <img src="./icons/default-icon.svg" alt="Feature">
+              </div>
+              <p class="text">Cras non lacus ultricies</p>
+              <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus. Nullam sodales nibh elit. Curabitur sit amet arcu nec tellus elementum.</p>
+            </div>
+             <!-- V -->
+             <div class="features-item">
+              <div class="icon-wrapper">
+                <img src="./icons/default-icon.svg" alt="Feature">
+              </div>
+              <p class="text">Integer porta congue diam</p>
+              <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus. Nullam sodales nibh elit. Curabitur sit amet arcu nec tellus elementum.</p>
+            </div>
+             <!-- VI -->
+             <div class="features-item">
+              <div class="icon-border">
+                <div class="icon-wrapper">
+                  <img src="./icons/default-icon.svg" alt="Feature">
+                </div>
+              </div>
+              <p class="text">Praesent pretium faucibus ligula</p>
+              <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus. Nullam sodales nibh elit. Curabitur sit amet arcu nec tellus elementum.</p>
+            </div>
+          </div>
+        </div>
+       </section>
+      <!-- End of Features Section -->
 
     </main>
+
+    <!-- Scroll to top button -->
+    <div class="scroll-top-btn">
+      <img src="./icons/arrow-up.svg" alt="Scroll to top">
+   </div>
     
     <!-- FOOTER -->
     <footer>
@@ -110,7 +276,7 @@
     <!-- END OF FOOTER -->
   </head>
     <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
-    <!-- <script src="./js/slick.min.js"></script> -->
+    <script src="./js/slick.min.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>

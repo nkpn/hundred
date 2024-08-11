@@ -25,3 +25,17 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 });
+
+
+// news section Slick slider initialization
+$(".news .carousel").slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  speed: 300,
+  dots: true,
+  arrows: true,
+  appendArrows: $(".carousel-buttons"),
+  prevArrow: $(".slider-left"),
+  nextArrow: $(".slider-right"),
+});
