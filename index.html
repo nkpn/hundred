@@ -36,7 +36,7 @@
             <a class="navigation-link" href="#">Menu item</a>
         </nav>
         <div class="desktop-cta">
-            <a href="#" class="button-cta">Button CTA <img src="./icons/arrow-right.svg" alt="button"></a>
+            <a href="#" class="button-cta small">Button CTA <img src="./icons/arrow-right.svg" alt="button"></a>
         </div>
         <div class="mobile-menu-icon">
           <input type="checkbox" id="toggle">
@@ -79,7 +79,7 @@
             <a href="#" class="button-cta">Button CTA <img src="./icons/arrow-right.svg" alt="button"></a>
           </div>
           <div class="hero-img-wrapper">
-            <img class="hero-img" src="./images/hero-image-DELETE.png" alt="Hero Image">
+            <img class="hero-img" src="./images/about-us-image-DELETE.png" alt="Hero Image">
           </div>
         </div>
        </seciton>
@@ -131,7 +131,7 @@
             <div class="badge">
               <p class="text-sm">Title goes here</p>
             </div>
-            <h3>Nullam iaculis, ipsum ac ullamcorper molestie</h3>
+            <h3 class="display-md">Nullam iaculis, ipsum ac ullamcorper molestie</h3>
             <p class="text">Donec at mauris nunc. Curabitur non congue sapien, sit amet vestibulum libero. Mauris neque sem, mattis non nibh in, porta lobortis quam.</p>
           </div>
           <div class="about-us-img-wrapper">
@@ -220,10 +220,8 @@
             </div>
              <!-- VI -->
              <div class="features-item">
-              <div class="icon-border">
-                <div class="icon-wrapper">
-                  <img src="./icons/default-icon.svg" alt="Feature">
-                </div>
+              <div class="icon-wrapper">
+                <img src="./icons/default-icon.svg" alt="Feature">
               </div>
               <p class="text">Praesent pretium faucibus ligula</p>
               <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus. Nullam sodales nibh elit. Curabitur sit amet arcu nec tellus elementum.</p>
@@ -232,6 +230,60 @@
         </div>
        </section>
       <!-- End of Features Section -->
+
+      <!-- CEO Quote section -->
+       <section class="section ceo-quote">
+        <div class="container">
+          <div class="two-columns-wrapper">
+            <div class="quote">
+              <h4 class="quote-text">“Mauris sit amet nisi in turpis convallis aliquet eu et lectus. Nullam sodales nibh elit. Curabitur sit amet arcu nec tellus elementum.”</h4>
+              <p class="text-md">— Name Surname, CEO</p>
+            </div>
+            <div class="ceo-quote-img-wrapper"> 
+              <img src="./images/about-us-image-DELETE.png" alt="section image">
+            </div>
+          </div>
+        </div>
+       </section>
+      <!-- End of CEO Quote section -->
+
+      <!-- Calculator Section -->
+       <section class="section calculator-section">
+        <div class="container">
+          <div class="two-columns-wrapper">
+            <div class="text-section">
+              <div class="badge">
+                <p class="text-sm">Title goes here</p>
+              </div>
+              <h4 class="display-md">Nulla sed diam ornare, porta risus ut, hendrerit nibh</h4>
+              <p class="text">Donec purus metus, lacinia eget nunc id, consequat maximus nulla. Maecenas velit mauris, imperdiet sit amet diam pretium, blandit efficitur turpis.</p>
+              <a href="#" class="button-cta">Button CTA <img src="./icons/arrow-right.svg" alt="button"></a>
+            </div>
+            <div class="calculator">
+              <div class="input-wrapper">
+                <div class="labels-wrapper">
+                  <label for="amount" class="text-sm">Amount</label> 
+                  <div id="amount-value">$1,000</div>
+                </div>
+                  
+                  <input type="range" id="amount" class="calculator-slider" min="500" max="100000" step="500" value="1000">
+              </div>
+              <div class="input-wrapper">
+                <div class="labels-wrapper">
+                  <label for="period" class="text-sm">Investment period</label>  
+                  <div id="period-value">3 years</div>
+                </div>
+                <input type="range" id="period" class="calculator-slider" min="1" max="10" step="1" value="3">
+              </div>
+              <div class="output">
+                  <p class="income-title text-md">Weekly income</p>
+                  <span id="weekly-income">$0</span>
+              </div>
+          </div>
+          </div>
+        </div>
+       </section>
+      <!-- End of Calculator Section -->
 
     </main>
 

@@ -40,6 +40,7 @@ header {
         &.opened{
             max-height: 100%; // for animation
             opacity: 1; // for animation
+            overflow: hidden;
         }
     }
 

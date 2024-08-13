@@ -105,6 +105,20 @@ h2,
     color: $blue;
 }
 
+.quote-text {
+    font-family: $font;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    font-style: italic;
+    color: $text;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 36px;
+        line-height: 44px;
+    }
+}
+
 // font styles
 
 .italic {
@@ -161,16 +175,42 @@ h2,
         background-color: $blueActive;
     }
 
-
     @media screen and (min-width: $tablet) {
         width: auto;
-        padding: 12px 20px;
+        padding: 16px 28px;
+        font-size: 18px;
+        line-height: 28px;
      }
+
+    
+   
     img {
         pointer-events: none;
         margin-left: 8px;
         width: 11.6px;
         height: 11.6px;
+        @media screen and (min-width: $tablet) {
+            margin-left: 12px;
+            width: 14px;
+            height: 14px;
+         }
+    }
+
+    // Small version (f.e. in header)
+    &.small {
+        @media screen and (min-width: $tablet) {
+            width: auto;
+            padding: 12px 20px;
+            font-size: 16px;
+            line-height: 24px;
+         }
+
+         img {
+            @media screen and (min-width: $tablet) {
+                width: 11.6px;
+                height: 11.6px;
+             }
+        }
     }
 }
 // Scroll To Top button
@@ -200,6 +240,46 @@ h2,
     }
 }
 
+input {
+    width: 100%;
+
+    &[type="range"] {
+       border-color: $blueLight;
+       background-color: $blueLight;
+    }
+    .calculator-slider {
+        width: 100%;
+        height: 8px;
+        background: $blueLight;
+        border-radius: 4px;
+        outline: none;
+        opacity: 0.9;
+        transition: opacity 0.2s;
+
+       & ::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #3B82F6;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+            transition: background-color 0.2s;
+        }
+
+        &::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            background: $blue;
+            border-radius: 50%;
+            cursor: pointer;
+            // box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+            transition: background-color 0.2s;
+        }
+    }
+}
+
 
 // General flex wrapper
 .two-columns-wrapper {
@@ -208,6 +288,10 @@ h2,
 
     @media screen and (min-width: $desktop) { 
         flex-direction: row;
+
+        & > div {
+            flex-basis: 50%;
+        }
     }
 }
 

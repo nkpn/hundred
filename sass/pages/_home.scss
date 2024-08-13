@@ -17,10 +17,14 @@
 
         @media screen and (min-width: $tablet) {
             padding: 0 48px;
-    }
+        }
 
         @media screen and (min-width: $desktop) {
-                padding: 0 104px;
+            padding: 0 104px;
+        }
+
+        img {
+            box-shadow: 0px 32px 64px -12px rgba(16, 24, 40, 0.14);
         }
     }
 }
@@ -55,6 +59,13 @@
 
 .news {
     background-color: $grayLightMobileBG;
+
+    @media screen and (min-width:$desktop) {
+        .container {
+            padding-bottom: 36px;
+        }
+        
+    }
    
     .slide {
         text-align: center;
@@ -75,7 +86,7 @@
             margin-bottom: 32px;
         }
 
-        h3 {
+        .carousel-title {
             margin-bottom: 32px;
         }
 
@@ -99,15 +110,16 @@
     .about-us-img-wrapper {
         display: flex;
         justify-content: center;
+        margin-bottom: 64px;
 
         @media screen and (min-width: $desktop) {
-            margin-bottom: 46px;
+            margin-bottom: 142px;
         }
 
         img {
             max-width: 800px;
             display: block;
-            box-shadow: rgba(16, 24, 40, 0.14);
+            box-shadow: 0px 32px 64px -12px rgba(16, 24, 40, 0.14);
         }
     }
 
@@ -153,23 +165,180 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
-
-        .icon-border {
-            padding: 8px;
-            border: 1px solid $blueLight;
-            margin-bottom: 20px;
-        }
+        align-items: center;
         
         .icon-wrapper {
             background-color: $blueLight;
+            position: relative;
             border-radius: 50%;
             width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 23px;
 
             img {
                 width: 24px;
                 height: 24px;
             }
+
+            &:after {
+                position: absolute;
+                display: block;
+                content: '';
+                height: calc(100% + 10px);
+                width: calc(100% + 10px);
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border: 2px solid $blueLight;
+                border-radius: 50%;
+            }
         }
       
+        .text {
+            margin-bottom: 4px;
+        }
+    }
+}
+
+.ceo-quote {
+    .two-columns-wrapper {
+        flex-direction: column-reverse;
+        gap: 64px;
+
+        @media screen and (min-width:$tablet) {
+           padding: 0 32px;
+        }
+
+        @media screen and (min-width:$desktop) {
+            flex-direction: row;
+            gap: 96px;
+            align-items: center;
+        }
+    }
+    .quote {
+        padding: 8px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        border-left: 2px solid $blue;
+    }
+    .ceo-quote-img-wrapper {
+        img {
+            box-shadow: 0px 32px 64px -12px rgba(16, 24, 40, 0.14);
+        }
+    }
+}
+
+.calculator-section {
+    background-color: $grayLightMobileBG;
+
+    .two-columns-wrapper {
+        gap: 64px;
+
+        @media screen and (min-width:$desktop) {
+            gap: 96px;
+        }
+
+        @media screen and (min-width:$desktop-large) {
+           gap: 148px;
+        }
+    }
+
+    .text-section {
+        align-items: center;
+
+        @media screen and (min-width:$desktop) {
+           justify-content: flex-start;
+           align-items: unset;
+           text-align: left;
+        }
+
+        .badge {
+            @media screen and (min-width:$desktop) {
+                margin: 0 auto 12px 0;
+            }
+        }
+
+        .text {
+            margin-bottom: 64px;
+            max-width: unset;
+
+            @media screen and (min-width:$desktop) {
+               text-align: left;
+            }
+        }
+
+        h4 {
+            margin-bottom: 16px;
+            @media screen and (min-width:$desktop) {
+                text-align: left;
+                margin-bottom: 20px;
+             }
+        }
+        
+
+        .button-cta {
+            @media screen and (min-width:$desktop) {
+                margin-top: auto;
+                width: max-content;
+            }
+        }
+        
+    }
+
+    .calculator {
+        background-color: $white;
+        border: 1px solid $gray;
+        border-radius: 16px;
+        height: max-content;
+
+        .input-wrapper {
+            margin: 32px 24px;
+
+            &:nth-of-type(2){
+                margin: 0 24px 32px;
+            }
+
+            .labels-wrapper {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 16px;
+
+                label {
+                    color: $blueGray;
+                }
+
+                #amount-value, #period-value {
+                    font-family: $font;
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 600;
+                    color: $text;
+                }
+            }
+        }
+        .output {
+            border-top: 1px solid $gray;
+            padding: 32px 24px;
+            text-align: center;
+
+           .income-title {
+                margin-bottom: 8px;
+           }
+
+           #weekly-income {
+            font-family: $font;
+            font-size: 48px;
+            line-height: 60px;
+            letter-spacing: -0.02em;;
+            font-weight: 600;
+            color: $text;
+           }
+        }
     }
 }

@@ -39,3 +39,41 @@ $(".news .carousel").slick({
   prevArrow: $(".slider-left"),
   nextArrow: $(".slider-right"),
 });
+
+// Calculator Logic
+
+const amountSlider = document.getElementById('amount');
+const periodSlider = document.getElementById('period');
+const amountValue = document.getElementById('amount-value');
+const periodValue = document.getElementById('period-value');
+const weeklyIncome = document.getElementById('weekly-income');
+
+// Function to format number as currency
+function formatCurrency(value) {
+    return value.toLocaleString()
+}
+
+// Function to update the displayed values and calculate weekly income
+function updateValues() {
+    const amount = parseInt(amountSlider.value);
+    const period = parseInt(periodSlider.value);
+
+    amountValue.textContent =  `$ ${formatCurrency(amount)}`;
+    periodValue.textContent = `${period} year${period > 1 ? 's' : ''}`;
+
+    // Example formula for weekly income calculation
+    const annualInterestRate = 0.5;
+    const totalIncome = amount * Math.pow(1 + annualInterestRate, period);
+    const weeklyIncomeValue = ((totalIncome - amount) / (period * 52)).toFixed(2);
+
+    weeklyIncome.textContent = `$ ${formatCurrency(parseFloat(weeklyIncomeValue))}`;
+}
+
+// Event listeners for sliders
+if (amountSlider && periodSlider && amountValue && periodValue && weeklyIncome) {
+  amountSlider.addEventListener('input', updateValues);
+  periodSlider.addEventListener('input', updateValues);
+}
+
+// Initial update
+updateValues();
