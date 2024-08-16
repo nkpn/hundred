@@ -40,6 +40,37 @@ $(".news .carousel").slick({
   nextArrow: $(".slider-right"),
 });
 
+// pricing section carousel
+$(".pricing-carousel").slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  speed: 300,
+  responsive: [
+      {
+        breakpoint: 2048,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+});
+
 // Calculator Logic
 
 const amountSlider = document.getElementById('amount');
@@ -77,3 +108,25 @@ if (amountSlider && periodSlider && amountValue && periodValue && weeklyIncome) 
 
 // Initial update
 updateValues();
+
+// Slider background logic to update
+function updateSliderBackground(slider, sliderValue) {
+  const progress = (sliderValue / slider.max) * 100;
+  slider.style.background = `linear-gradient(to right, #4E6CFF ${progress}%, #EEF1FF ${progress}%)`
+}
+
+if (amountSlider && amountValue){
+  updateSliderBackground(amountSlider, amountSlider.value);
+  amountSlider.addEventListener("input", function(event) {
+    updateSliderBackground(amountSlider, event.target.value);
+  });
+}
+
+if (periodSlider && periodValue){
+  /* -0.5 because slider has little step and because of this the background gradient is too large */ 
+  updateSliderBackground(periodSlider, periodSlider.value -0.5 );
+  periodSlider.addEventListener("input", function(event) {
+    updateSliderBackground(periodSlider, event.target.value - 0.5)
+  })
+}
+

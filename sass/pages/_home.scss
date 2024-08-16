@@ -11,6 +11,13 @@
     }
 }
 
+.img-wrapper {
+    img {
+        display: block;
+        box-shadow: 0px 32px 64px -12px rgba(16, 24, 40, 0.14);
+    }
+}
+
 .hero {
     .hero-img-wrapper {
         margin-top: 64px;
@@ -50,6 +57,7 @@
     .text {
         margin-bottom: 32px;
         text-align: center;
+        color: $textSecondary;
         @media screen and (min-width: $desktop) {
             margin-bottom: 48px;
             max-width: 60%;
@@ -166,39 +174,10 @@
         justify-content: center;
         text-align: center;
         align-items: center;
-        
-        .icon-wrapper {
-            background-color: $blueLight;
-            position: relative;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 23px;
-
-            img {
-                width: 24px;
-                height: 24px;
-            }
-
-            &:after {
-                position: absolute;
-                display: block;
-                content: '';
-                height: calc(100% + 10px);
-                width: calc(100% + 10px);
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                border: 2px solid $blueLight;
-                border-radius: 50%;
-            }
-        }
       
         .text {
             margin-bottom: 4px;
+            font-weight: 600;
         }
     }
 }
@@ -294,6 +273,7 @@
         border: 1px solid $gray;
         border-radius: 16px;
         height: max-content;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 
         .input-wrapper {
             margin: 32px 24px;
@@ -341,4 +321,207 @@
            }
         }
     }
+}
+
+/* Manual section*/
+.manual {
+    background-color: $white;
+
+    .text-section {
+        margin-bottom: 32px; // because .text has margin-bottom 32px
+    }
+
+    .two-columns-wrapper {
+        gap: 64px;
+
+        @media screen and (min-width: $desktop) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .features-list {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @media screen and (min-width: $tablet) {
+            gap: 48px;
+        }
+
+        .features-item {
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            gap: 20px;
+
+            .icon-wrapper {
+               min-width: 40px;
+            }
+
+            .text-wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+
+                .text {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    
+}
+
+// Pricing section
+.pricing {
+    background-color: $grayLightMobileBG;
+    .text-section {
+        margin-bottom: 32px; // because .text has margin-bottom 32px
+    }
+
+    .pricing-card {
+        border-radius: 16px;
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border: 1px solid $cardBorder;
+        
+
+
+        .icon-wrapper {
+            padding: 0 16px;
+            min-width: 40px;
+            margin-top: 36px;
+            margin-bottom: 28px;
+         }
+
+         .plan-name {
+            padding: 0 16px;
+            font-family: $font;
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 600;
+            color: $blue;
+            margin-bottom: 8px;
+         }
+
+         .card-price {
+            padding: 0 16px;
+            font-family: $font;
+            font-size: 48px;
+            line-height: 60px;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: $text;
+            margin-bottom: 8px;
+         }
+
+        .features-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding: 32px 0;
+        }
+    
+        .features-item {
+            display: flex; 
+            align-items: center;
+            gap: 12px;
+            img { width: 24px; }
+        }
+
+        .cta {
+            padding: 32px 16px;
+            width: 100%;
+            background-color: $grayLightMobileBG;
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+            box-shadow: 0px 16px 16px -12px rgba(16, 24, 40, 0.08);
+            button {
+                width: 100%;
+            }
+        }
+    }   
+
+    .slick-slider {
+
+        margin:0 -16px;
+        
+        @media screen and (min-width: $tablet) {
+            margin:0 -16px;
+        }
+        
+    }
+
+    .slick-slide {
+        margin: 0 16px;
+        @media screen and (min-width: $tablet) {
+            margin: 0 16px;
+        }
+        
+    }
+}
+
+//  License section
+.license {
+    .two-columns-wrapper {
+        gap: 64px;
+
+        @media screen and (min-width:$desktop) {
+            gap: 96px;
+        }
+
+        @media screen and (min-width:$desktop-large) {
+           gap: 148px;
+        }
+    }
+
+    .text-section {
+        align-items: center;
+
+        @media screen and (min-width:$desktop) {
+           justify-content: flex-start;
+           align-items: unset;
+           text-align: left;
+        }
+
+        .badge {
+            @media screen and (min-width:$desktop) {
+                margin: 0 auto 12px 0;
+            }
+        }
+
+        .text {
+            margin-bottom: 64px;
+            max-width: unset;
+
+            @media screen and (min-width:$desktop) {
+               text-align: left;
+            }
+        }
+
+        h4 {
+            margin-bottom: 16px;
+            @media screen and (min-width:$desktop) {
+                text-align: left;
+                margin-bottom: 20px;
+             }
+        }
+        
+
+        .button-cta {
+            @media screen and (min-width:$desktop) {
+                margin-top: auto;
+                width: max-content;
+            }
+        }
+        
+    }
+}
+
+// Testimonals section
+.testimonals {
+    background-color: $grayLightMobileBG;
 }

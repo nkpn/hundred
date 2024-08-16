@@ -73,7 +73,7 @@ h2,
     font-size: 18px;
     line-height: 28px;
     font-weight: 400;
-    color: $textSecondary;
+    color: $text;
 
     @media screen and (min-width: $tablet) {
         font-size: 20px;
@@ -247,7 +247,8 @@ input {
        border-color: $blueLight;
        background-color: $blueLight;
     }
-    .calculator-slider {
+    &.calculator-slider {
+        -webkit-appearance: none;
         width: 100%;
         height: 8px;
         background: $blueLight;
@@ -255,27 +256,28 @@ input {
         outline: none;
         opacity: 0.9;
         transition: opacity 0.2s;
-
-       & ::-webkit-slider-thumb {
+        position: relative;
+        // overflow: hidden;
+        
+        /* Track Webkit browsers */
+        &::-webkit-slider-thumb {
             -webkit-appearance: none;
             appearance: none;
-            width: 20px;
-            height: 20px;
-            background: #3B82F6;
+            height: 24px;
+            width: 24px;
+            background-color: $white;
+            background: $white;
+            border: 1px solid $blue;
             border-radius: 50%;
             cursor: pointer;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
             transition: background-color 0.2s;
         }
-
+        /* Track: Mozilla Firefox */
         &::-moz-range-thumb {
-            width: 20px;
-            height: 20px;
-            background: $blue;
-            border-radius: 50%;
-            cursor: pointer;
-            // box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-            transition: background-color 0.2s;
+            background: unset !important;
+            background-color: $blueLight !important;
+            border-radius: 4px;
+            box-shadow: -400px 0 0 400px $blue;
         }
     }
 }
@@ -319,6 +321,36 @@ input {
 
     @media screen and (min-width: $desktop) { 
         grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.icon-wrapper {
+    background-color: $blueLight;
+    position: relative;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 23px;
+
+    img {
+        width: 24px;
+        height: 24px;
+    }
+
+    &:after {
+        position: absolute;
+        display: block;
+        content: '';
+        height: calc(100% + 10px);
+        width: calc(100% + 10px);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid $blueLight;
+        border-radius: 50%;
     }
 }
 
