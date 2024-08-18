@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+  const body = document.body;
   // Function for "Scrol to top" button
   function scrollToTop() {
     console.log('click')
@@ -10,25 +11,26 @@ document.addEventListener("DOMContentLoaded", function() {
   scrollToTopButton.addEventListener('click', scrollToTop)
 
   // Mobile Header Menu Show / Hide function
-
-    const toggleCheckbox = document.getElementById("toggle");
-    const mobileMenu = document.querySelector(".mobile-menu");
-    
-    if (mobileMenu && toggleCheckbox) {
-      toggleCheckbox.addEventListener("change", function() {
-        if (toggleCheckbox.checked) {
-          mobileMenu.classList.add('opened')
-          setTimeout(() => {
-            mobileMenu.style.display = "flex";
-          }, 200);
-        } else {
-          mobileMenu.classList.remove('opened')
-          setTimeout(() => {
-            mobileMenu.style.display = "none";
-          }, 300);
-        }
-      });
-    }
+  const toggleCheckbox = document.getElementById("toggle");
+  const mobileMenu = document.querySelector(".mobile-menu");
+  
+  if (mobileMenu && toggleCheckbox) {
+    toggleCheckbox.addEventListener("change", function() {
+      if (toggleCheckbox.checked) {
+        mobileMenu.classList.add('opened')
+        document.body.classList.add('no-scroll');
+        setTimeout(() => {
+          mobileMenu.style.display = "flex";
+        }, 200);
+      } else {
+        mobileMenu.classList.remove('opened')
+        document.body.classList.remove('no-scroll');
+        setTimeout(() => {
+          mobileMenu.style.display = "none";
+        }, 300);
+      }
+    });
+  }
 
 
 

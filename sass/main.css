@@ -950,6 +950,10 @@ input.calculator-slider::-moz-range-thumb {
   width: max-content;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .section .container {
   padding-top: 64px;
   padding-bottom: 64px;
@@ -1048,6 +1052,14 @@ input.calculator-slider::-moz-range-thumb {
 }
 .news .slide .caption {
   margin-bottom: 32px;
+}
+.news .carousel-buttons {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .news .carousel-buttons {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1024px) {

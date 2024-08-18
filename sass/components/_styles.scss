@@ -366,3 +366,7 @@ input {
     margin: 0 auto;
     width: max-content;
 }
+
+.no-scroll {
+    overflow: hidden;
+}

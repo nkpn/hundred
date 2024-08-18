@@ -68,6 +68,7 @@
 .news {
     background-color: $grayLightMobileBG;
 
+
     @media screen and (min-width:$desktop) {
         .container {
             padding-bottom: 36px;
@@ -104,6 +105,12 @@
 
         .caption {
             margin-bottom: 32px;
+        }
+    }
+    .carousel-buttons {
+        display: none;
+        @media screen and (min-width:$tablet) {
+            display: block;
         }
     }
 }
