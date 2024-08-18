@@ -347,10 +347,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .iti {
-  --iti-path-flags-1x: url("./images/flags.webp");
-  --iti-path-flags-2x: url("./images/flags@2x.webp");
-  --iti-path-globe-1x: url("./images/globe.webp");
-  --iti-path-globe-2x: url("./images/globe@2x.webp");
+  --iti-path-flags-1x: url("../images/flags/flags.webp");
+  --iti-path-flags-2x: url("../images/flags/flags@2x.webp");
+  --iti-path-globe-1x: url("../images/flags/globe.webp");
+  --iti-path-globe-2x: url("../images/flags/globe@2x.webp");
 }
 
 .container {
