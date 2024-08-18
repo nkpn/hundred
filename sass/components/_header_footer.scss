@@ -2,6 +2,7 @@
 header {
     background-color: $white;
     border-bottom: 1px solid $grayBorder;
+    overflow: inherit;
 
     .header-container {
         display: flex;

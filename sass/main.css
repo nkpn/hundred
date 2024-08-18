@@ -373,6 +373,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 header {
   background-color: #ffffff;
   border-bottom: 1px solid #F2F4F7;
+  overflow: inherit;
 }
 header .header-container {
   display: flex;
