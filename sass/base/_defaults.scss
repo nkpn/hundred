@@ -16,6 +16,10 @@ body {
   min-height: 100%;
 }
 
+main {
+  overflow: inherit;
+}
+
 a {
   text-decoration: none;
   display: inline-block;

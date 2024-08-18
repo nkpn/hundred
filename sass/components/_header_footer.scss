@@ -8,6 +8,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        overflow: inherit;
 
         @media screen and (min-width: $desktop-large) {
             padding: 0 32px;
