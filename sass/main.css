@@ -351,8 +351,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .iti {
-  --iti-path-flags-1x: url("../images/flags/flags.webp");
-  --iti-path-flags-2x: url("../images/flags/flags@2x.webp");
+  --iti-path-flags-1x: url("../images/flags/flags.png");
+  --iti-path-flags-2x: url("../images/flags/flags@2x.png");
   --iti-path-globe-1x: url("../images/flags/globe.webp");
   --iti-path-globe-2x: url("../images/flags/globe@2x.webp");
 }
@@ -1599,6 +1599,27 @@ input[type=phone] {
 .lead-form .two-columns-wrapper {
   gap: 48px;
 }
-.lead-form .text-section {
-  text-align: left;
+@media screen and (min-width: 1024px) {
+  .lead-form .two-columns-wrapper {
+    gap: 104px;
+  }
+}
+.lead-form .img-wrapper {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .lead-form .img-wrapper {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .lead-form .content-wrapper .text-section h1 {
+    text-align: left;
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .lead-form .content-wrapper .text-section .text {
+    text-align: left;
+    min-width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

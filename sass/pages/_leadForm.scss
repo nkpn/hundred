@@ -11,9 +11,32 @@
 .lead-form {
     .two-columns-wrapper {
         gap: 48px;
-        
+
+        @media screen and (min-width:$desktop) {
+            gap: 104px;
+        }
+
     }
-    .text-section {
-        text-align: left;
+    .img-wrapper {
+        display: none;
+        @media screen and (min-width:$desktop) {
+            display: flex;
+        }
+    }
+
+    .content-wrapper {
+        .text-section {
+            @media screen and (min-width:$desktop) {
+                h1 {
+                    text-align: left;
+                    font-size: 48px;
+                    line-height: 60px;
+                }
+                .text {
+                    text-align: left;
+                    min-width: 100%;
+                }
+            }
+        } 
     }
 }
