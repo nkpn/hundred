@@ -270,6 +270,7 @@ body {
   position: relative;
   font-family: "Inter", sans-serif;
   height: 100%;
+  min-height: 100%;
 }
 
 a {
@@ -346,10 +347,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .iti {
-  --iti-path-flags-1x: url("path/to/flags.webp");
-  --iti-path-flags-2x: url("path/to/flags@2x.webp");
-  --iti-path-globe-1x: url("path/to/globe.webp");
-  --iti-path-globe-2x: url("path/to/globe@2x.webp");
+  --iti-path-flags-1x: url("../images/img/flags.webp") !important;
+  --iti-path-flags-2x: url("../images/img/flags@2x.webp") !important;
+  --iti-path-globe-1x: url("../images/img/globe.webp") !important;
+  --iti-path-globe-2x: url("../images/img/globe@2x.webp") !important;
 }
 
 .container {
@@ -559,6 +560,7 @@ footer .footer-nav {
   justify-content: space-between;
   gap: 32px;
   margin: 0 0 48px 0;
+  width: 100%;
 }
 @media screen and (min-width: 1024px) {
   footer .footer-nav {
@@ -825,8 +827,9 @@ h2,
   border: 1px solid gray;
   border-radius: 8px;
   display: block;
-  position: absolute;
-  bottom: 120px;
+  position: fixed;
+  background-color: #ffffff;
+  bottom: 24px;
   right: 16px;
   cursor: pointer;
   z-index: 50;
@@ -838,7 +841,7 @@ h2,
   .scroll-top-btn {
     padding: 21px;
     right: 40px;
-    bottom: 156px;
+    bottom: 48px;
   }
 }
 .scroll-top-btn img {

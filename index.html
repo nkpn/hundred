@@ -603,9 +603,15 @@
     <script>
       const input = document.querySelector("#phone");
       window.intlTelInput(input, {
+        showFlags: true,
+        useFullscreenPopup: false,
         utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@23.9.2/build/js/utils.js",
       });
+      // const iti = intlTelInput(input);
+      // const number = iti.getNumber(input.utils.numberFormat.E164);
     </script>
+    <!-- Mask script -->
+    <script src="https://unpkg.com/imask"></script>
     <!-- Our script -->
     <script src="./js/index.js"></script>
   </body>

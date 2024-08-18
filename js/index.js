@@ -172,5 +172,8 @@ document.addEventListener("DOMContentLoaded", function() {
     })
   }
 
-
+  var phoneMask = IMask(
+    document.getElementById('phone'), {
+      mask: '+0(000)000-0000'
+  });
 });

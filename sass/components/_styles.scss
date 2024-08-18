@@ -235,8 +235,9 @@ h2,
     border: 1px solid gray;
     border-radius: 8px;
     display: block;
-    position: absolute;
-    bottom: 120px;
+    position: fixed;
+    background-color: $white;
+    bottom: 24px;
     right: 16px;
     cursor: pointer;
     z-index: 50;
@@ -248,7 +249,7 @@ h2,
     @media screen and (min-width: $desktop) {
         padding: 21px;
         right: 40px;
-        bottom: 156px;
+        bottom: 48px;
     }
 
     img {
