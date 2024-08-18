@@ -596,3 +596,42 @@
         }
     }
 }
+
+// CTA Section
+.cta-section { 
+    background-color: $blue;
+
+    .two-columns-wrapper {
+        gap: 48px;
+
+        @media screen and (min-width:$desktop) {
+            flex-direction: row;
+            gap: 96px;
+            align-items: flex-start;
+        }
+    }
+
+    .cta-text {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 0;
+            text-align: left;
+        }
+
+        h5, p {
+            color: $white;
+        }
+       
+    }
+
+    .cta-form {
+        label {
+            color: $gray;
+        }
+    }
+}
+
