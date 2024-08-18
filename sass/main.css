@@ -347,10 +347,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .iti {
-  --iti-path-flags-1x: url("../images/img/flags.webp") !important;
-  --iti-path-flags-2x: url("../images/img/flags@2x.webp") !important;
-  --iti-path-globe-1x: url("../images/img/globe.webp") !important;
-  --iti-path-globe-2x: url("../images/img/globe@2x.webp") !important;
+  --iti-path-flags-1x: url("./images/flags.webp");
+  --iti-path-flags-2x: url("./images/flags@2x.webp");
+  --iti-path-globe-1x: url("./images/globe.webp");
+  --iti-path-globe-2x: url("./images/globe@2x.webp");
 }
 
 .container {
@@ -983,6 +983,7 @@ input.calculator-slider::-moz-range-thumb {
 .cta-form button.button-cta {
   width: 100%;
   margin-top: 32px;
+  border: none;
 }
 
 input[type=text],
@@ -1579,4 +1580,20 @@ input[type=phone] {
 }
 .cta-section .cta-form label {
   color: #D0D5DD;
+}
+
+.lead-form-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.lead-form-page main {
+  flex: 1 0 100%;
+}
+
+.lead-form .two-columns-wrapper {
+  gap: 48px;
+}
+.lead-form .text-section {
+  text-align: left;
 }/*# sourceMappingURL=main.css.map */
