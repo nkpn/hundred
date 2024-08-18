@@ -196,6 +196,22 @@ h2,
          }
     }
 
+    // for home page footer form
+    &.white {
+        background-color: $white;
+        color: $blue;
+        border: none;
+
+        &:hover, &:focus {
+            background-color:  $blueLight;
+        }
+    
+        &:active {
+            background-color: $grayBorder;
+            color: $blueGray;
+        }
+    }
+
     // Small version (f.e. in header)
     &.small {
         @media screen and (min-width: $tablet) {
@@ -244,10 +260,16 @@ h2,
 input {
     width: 100%;
 
+    &:focus {
+        outline: none;
+    }
+
+    // Range styles
     &[type="range"] {
        border-color: $blueLight;
        background-color: $blueLight;
     }
+
     &.calculator-slider {
         -webkit-appearance: none;
         width: 100%;
@@ -372,6 +394,11 @@ input {
     label {
         display: inline-block;
         margin-bottom: 6px; 
+    }
+
+    button.button-cta {
+        width: 100%;
+        margin-top: 32px;
     }
 }
 
