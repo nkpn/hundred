@@ -1,13 +1,25 @@
 document.addEventListener("DOMContentLoaded", function() {
   const body = document.body;
   // Function for "Scrol to top" button
+  const scrollToTopButton = document.querySelector('.scroll-top-btn');
   function scrollToTop() {
-    console.log('click')
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
 
-  const scrollToTopButton = document.querySelector('.scroll-top-btn');
+  // function to show Scroll To Top Button only after scroll position 150
+  function toggleScrollButton() {
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+        scrollToTopButton.style.display = "block"; // Show the button
+    } else {
+        scrollToTopButton.style.display = "none"; // Hide thscrollToTopButton
+    }
+  }
+
+  window.onscroll = function() {
+    toggleScrollButton();
+  };
+ 
   scrollToTopButton.addEventListener('click', scrollToTop)
 
   // Mobile Header Menu Show / Hide function
