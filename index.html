@@ -16,7 +16,7 @@
     /> -->
     <link rel="stylesheet" href="./sass/slick.css" />
     <link rel="stylesheet" href="./sass/slick-theme.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.9.2/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@24.0.1/build/css/intlTelInput.css">
     <link rel="stylesheet" href="./sass/main.css" />
   </head>
 
@@ -596,17 +596,22 @@
     <!-- END OF FOOTER -->
   </head>
   <!-- Slick slider init -->
-    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="./js/slick.min.js"></script>
-    <!-- Country input init -->
-    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.9.2/build/js/intlTelInput.min.js"></script>
-    <script>
+  <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <!-- Country input init -->
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@24.0.1/build/js/intlTelInput.min.js"></script>
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
       const input = document.querySelector("#phone");
+
+      
       window.intlTelInput(input, {
         showFlags: true,
         useFullscreenPopup: false,
-        utilsScript: "./js/utils.js",
+        utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@24.0.1/build/js/utils.js",
+        // utilsScript: "./utils.js",
       });
+    })
     </script>
     <!-- Our script -->
     <script src="./js/index.js"></script>
