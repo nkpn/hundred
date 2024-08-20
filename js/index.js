@@ -25,18 +25,23 @@ document.addEventListener("DOMContentLoaded", function() {
   // Mobile Header Menu Show / Hide function
   const toggleCheckbox = document.getElementById("toggle");
   const mobileMenu = document.querySelector(".mobile-menu");
-  
+  const headerContainer = document.querySelector('.header-container');
+
   if (mobileMenu && toggleCheckbox) {
     toggleCheckbox.addEventListener("change", function() {
       if (toggleCheckbox.checked) {
         mobileMenu.classList.add('opened')
-        document.body.classList.add('no-scroll');
+        document.body.classList.add('no-scroll'); // hide Y scroll
+        headerContainer.body.classList.add('no-scroll'); // hide Y scroll
+
         setTimeout(() => {
           mobileMenu.style.display = "flex";
         }, 200);
       } else {
         mobileMenu.classList.remove('opened')
         document.body.classList.remove('no-scroll');
+        headerContainer.body.classList.remove('no-scroll');
+
         setTimeout(() => {
           mobileMenu.style.display = "none";
         }, 300);
