@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
       if (toggleCheckbox.checked) {
         mobileMenu.classList.add('opened')
         document.body.classList.add('no-scroll'); // hide Y scroll
-        headerContainer.body.classList.add('no-scroll'); // hide Y scroll
+        headerContainer.classList.add('no-scroll'); // hide Y scroll
 
         setTimeout(() => {
           mobileMenu.style.display = "flex";
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
       } else {
         mobileMenu.classList.remove('opened')
         document.body.classList.remove('no-scroll');
-        headerContainer.body.classList.remove('no-scroll');
+        headerContainer.classList.remove('no-scroll');
 
         setTimeout(() => {
           mobileMenu.style.display = "none";
