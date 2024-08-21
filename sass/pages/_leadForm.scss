@@ -26,16 +26,15 @@
 
     .content-wrapper {
         .text-section {
-            @media screen and (min-width:$desktop) {
-                h1 {
-                    text-align: left;
-                    font-size: 48px;
-                    line-height: 60px;
-                }
-                .text {
-                    text-align: left;
-                    min-width: 100%;
-                }
+            align-items: start;
+            h1 {
+                text-align: left;
+                font-size: 48px;
+                line-height: 60px;
+            }
+            .text {
+                text-align: left;
+                min-width: 100%;
             }
         } 
     }
