@@ -425,6 +425,7 @@
 
     .slick-slider {
         margin: 0 -8px;
+        overflow: hidden;
         
         @media screen and (min-width: $tablet) {
             margin:0 -16px;
