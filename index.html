@@ -21,23 +21,24 @@
   </head>
 
   <body class="page home-page">
+
     <!-- HEADER  -->
+
     <header>
       <div class="container header-container">
         <!-- Desktop header -->
         <div class="logo header-logo">
-            <a href="./index.html">Company logo</a>
+            <a href="./index.html">Davivienda</a>
         </div>
         <nav class="desktop-navigation">
-            <a class="navigation-link" href="#">Menu item</a>
-            <a class="navigation-link" href="#">Menu item</a>
-            <a class="navigation-link" href="#">Menu item</a>
-            <a class="navigation-link" href="#">Menu item</a>
-            <a class="navigation-link" href="#">Menu item</a>
-            <a class="navigation-link" href="#">Menu item</a>
+            <a class="navigation-link" href="#" onclick="document.location.hash='';return false;">Inicio</a>
+            <a class="navigation-link" href="#" onclick="document.location.hash='';return false;">Acerca de Nosotros</a>
+            <a class="navigation-link" href="#" onclick="document.location.hash='';return false;">Servicios</a>
+            <a class="navigation-link" href="#" onclick="document.location.hash='';return false;">Testimonios</a>
+            <a class="navigation-link" href="./lead-form.html">Contacto</a>
         </nav>
         <div class="desktop-cta">
-            <a href="./lead-form.html" class="button-cta small">Button CTA <img src="./icons/arrow-right.svg" alt="button"></a>
+            <a href="./lead-form.html" class="button-cta small">Cambia tu vida <img src="./icons/arrow-right.svg" alt="button"></a>
         </div>
         <div class="mobile-menu-icon">
           <input type="checkbox" id="toggle">
@@ -47,12 +48,12 @@
         <!-- Mobile Menu -->
         <div class="mobile-menu">
           <nav class="mobile-navigation">
-            <a class="navigation-link" href="#">Menu item</a>
-            <a class="navigation-link" href="#">Menu item</a>
-            <a class="navigation-link" href="#">Menu item</a>
-            <a class="navigation-link" href="#">Menu item</a>
-            <a class="navigation-link" href="#">Menu item</a>
-            <a class="navigation-link" href="#">Menu item</a>
+            <a class="navigation-link" href="#" onclick="document.location.hash='';return false;">Menu item</a>
+            <a class="navigation-link" href="#" onclick="document.location.hash='';return false;">Menu item</a>
+            <a class="navigation-link" href="#" onclick="document.location.hash='';return false;">Menu item</a>
+            <a class="navigation-link" href="#" onclick="document.location.hash='';return false;">Menu item</a>
+            <a class="navigation-link" href="#" onclick="document.location.hash='';return false;">Menu item</a>
+            <a class="navigation-link" href="#" onclick="document.location.hash='';return false;">Menu item</a>
           </nav>
           <div class="mobile-menu-footer">
             <div class="logo header-logo">
@@ -63,30 +64,73 @@
           </div>
         </div>
       </div>
-  </header>
+     </header>
+
     <!-- END OF HEADER -->
 
     <main>
 
-      <!-- HERO Section -->
-       <seciton class="section hero">
-        <div class="container">
-          <div class="two-columns">
+    <!-- HERO Section -->
+    <section class="section hero" style="position: relative; overflow: hidden; height: 100vh;">
+        <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; ">
+            <source src="./images/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Dark overlay -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); z-index: 0;"></div>
+        
+        <div class="container" style="position: relative; z-index: 2; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center;">
             <div class="text-section">
-              <div class="badge">
-                <p class="text-sm">Title goes here</p>
-              </div>
-              <h1>Lorem ipsum dolor sit amet</h1>
-              <p class="text">Donec at mauris nunc. Curabitur non congue sapien, sit amet vestibulum libero. Mauris neque sem, mattis non nibh in, porta lobortis quam.</p>
-              <a href="./lead-form.html" class="button-cta">Button CTA <img src="./icons/arrow-right.svg" alt="button"></a>
+              
+                <h1 style="color: white;">Tu Compañero en el Camino hacia el Éxito Financiero</h1>
+                <p class="text" style="color: white;">Descubre oportunidades financieras con Davivienda. Nuestra plataforma te ofrece las herramientas para tomar decisiones informadas y maximizar tus inversiones, ya seas un inversor nuevo o experimentado.</p>
+                <a href="./lead-form.html" class="button-cta">Cambia tu vida <img src="./icons/arrow-right.svg" alt="button"></a>
             </div>
-            <div class="hero-img-wrapper img-wrapper">
-              <img class="hero-img" src="./images/about-us-image-DELETE.png" alt="Hero Image">
-            </div>
+        </div>
+    </section>
+    <!-- End of HERO Section -->
+
+
+      <!-- About Us section -->
+      <section class="section about-us">
+      <div class="container">
+        <div class="text-section">
+          
+          <h3 class="display-md">Conoce a Davivienda</h3>
+          <p class="text">En Davivienda, estamos dedicados a proporcionar soluciones de inversión que se adaptan a las necesidades de nuestros clientes. Nuestra misión es hacer que el trading sea accesible, eficiente y rentable para todos, desde inversores novatos hasta expertos en finanzas.</p>
+        </div>
+        <div class="about-us-img-wrapper img-wrapper">
+          <img src="./images/2211.png" alt="section image">
+        </div>
+        <div class="four-columns highlights">
+          <!-- I -->
+          <div class="highglight-item">
+            <h4 class="display-xl">600+</h4>
+            <p class="text-lg">Usuarios Registrados</p>
+            <p class="text-md">Este es el número de nuevos clientes que se han registrado esta semana, confiando en nuestra plataforma para iniciar su viaje financiero.</p>
+          </div>
+          <!-- II -->
+          <div class="highglight-item">
+            <h4 class="display-xl">$10M+</h4>
+            <p class="text-lg">Volumen de Operaciones</p>
+            <p class="text-md">Nuestra plataforma ha gestionado más de $10 millones en volumen de operaciones solo en el último mes, demostrando nuestra capacidad y confianza en el mercado.</p>
+          </div>
+          <!-- III -->
+          <div class="highglight-item">
+            <h4 class="display-xl">98%</h4>
+            <p class="text-lg">Satisfacción del Cliente</p>
+            <p class="text-md">El 98% de nuestros clientes han expresado un alto nivel de satisfacción, valorando la eficacia y el soporte continuo que ofrecemos.</p>
+          </div>
+          <!-- IV -->
+          <div class="highglight-item">
+            <h4 class="display-xl">50,000+</h4>
+            <p class="text-lg">Clientes satisfechos</p>
+            <p class="text-md">Más de 50,000 clientes han confiado en nosotros y están satisfechos con los resultados obtenidos a través de nuestra plataforma.</p>
           </div>
         </div>
-       </seciton>
-      <!-- End of HERO Section -->
+      </div>
+      </section>
+      <!-- End of About Us section -->
 
       <!-- News Carousel Section -->
         <section class="section news">
@@ -94,24 +138,23 @@
             <div class="carousel">
               <!-- 1st slide -->
               <div class="slide">
-                <img src="./icons/NYT-icon.svg" alt="NY Times" class="slide-icon">
-                <h2 class="carousel-title">Nulla sed diam ornare, porta risus ut, hendrerit nibh. Cras sit amet accumsan velit, et iaculis justo.</h2>
-                <p class="text-lg source">Source name</p>
-                <p class="text-md caption">Caption</p>
+                <img src="./images/tiem.png" alt="NY Times" class="slide-icon">
+                <h2 class="carousel-title">Davivienda revoluciona el trading en Colombia con su nueva plataforma automatizada.</h2>
+                <p class="text-lg source">El Tiempo</p>
+              
               </div>
               <!-- 2nd slide -->
               <div class="slide">
-                <img src="./icons/NYT-icon.svg" alt="NY Times" class="slide-icon">
-                <h2 class="carousel-title">Nulla sed diam ornare, porta risus ut, hendrerit nibh. Cras sit amet accumsan velit, et iaculis justo.</h2>
-                <p class="text-lg source">Source name</p>
-                <p class="text-md caption">Caption</p>
+                <img src="./images/especta.png" alt="NY Times" class="slide-icon">
+                <h2 class="carousel-title">Davivienda eleva el estándar del trading con su innovadora plataforma.</h2>
+                <p class="text-lg source">El Espectador</p>
+            
               </div>
               <!-- 3rd slide -->
               <div class="slide">
-                <img src="./icons/NYT-icon.svg" alt="NY Times" class="slide-icon">
+                <img src="./images/sem.png" alt="NY Times" class="slide-icon">
                 <h2 class="carousel-title">Nulla sed diam ornare, porta risus ut, hendrerit nibh. Cras sit amet accumsan velit, et iaculis justo.</h2>
-                <p class="text-lg source">Source name</p>
-                <p class="text-md caption">Caption</p>
+                <p class="text-lg source">Semana</p>
               </div>
             </div>
             <!-- Custom slider buttons -->
@@ -127,58 +170,16 @@
         </section>
       <!-- End of News Carousel Section -->
 
-      <!-- About Us section -->
-       <section class="section about-us">
-        <div class="container">
-          <div class="text-section">
-            <div class="badge">
-              <p class="text-sm">Title goes here</p>
-            </div>
-            <h3 class="display-md">Nullam iaculis, ipsum ac ullamcorper molestie</h3>
-            <p class="text">Donec at mauris nunc. Curabitur non congue sapien, sit amet vestibulum libero. Mauris neque sem, mattis non nibh in, porta lobortis quam.</p>
-          </div>
-          <div class="about-us-img-wrapper img-wrapper">
-            <img src="./images/about-us-image-DELETE.png" alt="section image">
-          </div>
-          <div class="four-columns highlights">
-            <!-- I -->
-            <div class="highglight-item">
-              <h4 class="display-xl">4,000+</h4>
-              <p class="text-lg">Lorem ipsum dolor</p>
-              <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus.</p>
-            </div>
-            <!-- II -->
-            <div class="highglight-item">
-              <h4 class="display-xl">600%</h4>
-              <p class="text-lg">Lorem ipsum dolor</p>
-              <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus.</p>
-            </div>
-            <!-- III -->
-            <div class="highglight-item">
-              <h4 class="display-xl">10k</h4>
-              <p class="text-lg">Lorem ipsum dolor</p>
-              <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus.</p>
-            </div>
-            <!-- IV -->
-            <div class="highglight-item">
-              <h4 class="display-xl">200+</h4>
-              <p class="text-lg">Lorem ipsum dolor</p>
-              <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus.</p>
-            </div>
-          </div>
-        </div>
-       </section>
-      <!-- End of About Us section -->
+      
 
       <!-- Features Section -->
        <section class="section features">
         <div class="container">
           <div class="text-section">
             <div class="badge">
-              <p class="text-sm">Title goes here</p>
             </div>
-            <h4 class="display-md">Lorem ipsum dolor sit amet</h4>
-            <p class="text">Donec at mauris nunc. Curabitur non congue sapien, sit amet vestibulum libero. Mauris neque sem, mattis non nibh in, porta lobortis quam.</p>
+            <h4 class="display-md">VENTAJAS DE LA PLATAFORMA DAVIVIENDA</h4>
+            <p class="text">En Davivienda, ofrecemos un conjunto completo de servicios diseñados para cubrir todas tus necesidades de inversión. Desde trading personalizado y automatizado hasta asesoría experta y acceso a mercados globales, estamos aquí para ayudarte a alcanzar tus metas financieras con confianza y conocimiento.</p>
           </div>
           <div class="three-columns features-list">
             <!-- I -->
@@ -186,48 +187,48 @@
               <div class="icon-wrapper">
                 <img src="./icons/default-icon.svg" alt="Feature">
               </div>
-              <p class="text">Cras non lacus ultricies</p>
-              <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus. Nullam sodales nibh elit. Curabitur sit amet arcu nec tellus elementum.</p>
+              <p class="text">Trading Personalizado</p>
+              <p class="text-md">Adapta tu experiencia de trading según tus necesidades con nuestras herramientas personalizables.</p>
             </div>
              <!-- II -->
              <div class="features-item">
               <div class="icon-wrapper">
                 <img src="./icons/default-icon.svg" alt="Feature">
               </div>
-              <p class="text">Praesent pretium faucibus ligula</p>
-              <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus. Nullam sodales nibh elit. Curabitur sit amet arcu nec tellus elementum.</p>
+              <p class="text">Asesoría Financiera</p>
+              <p class="text-md">Recibe orientación de expertos para tomar decisiones de inversión más inteligentes.</p>
             </div>
              <!-- III -->
              <div class="features-item">
               <div class="icon-wrapper">
                 <img src="./icons/default-icon.svg" alt="Feature">
               </div>
-              <p class="text">Integer porta congue diam</p>
-              <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus. Nullam sodales nibh elit. Curabitur sit amet arcu nec tellus elementum.</p>
+              <p class="text">Acceso a Mercados Globales</p>
+              <p class="text-md">Participa en los mercados internacionales más importantes, todo desde una sola plataforma.</p>
             </div>
              <!-- IV -->
              <div class="features-item">
               <div class="icon-wrapper">
                 <img src="./icons/default-icon.svg" alt="Feature">
               </div>
-              <p class="text">Cras non lacus ultricies</p>
-              <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus. Nullam sodales nibh elit. Curabitur sit amet arcu nec tellus elementum.</p>
+              <p class="text">Recursos Educativos</p>
+              <p class="text-md">Amplía tu conocimiento con cursos, seminarios y análisis de mercado diseñados para todos los niveles de experiencia.</p>
             </div>
              <!-- V -->
              <div class="features-item">
               <div class="icon-wrapper">
                 <img src="./icons/default-icon.svg" alt="Feature">
               </div>
-              <p class="text">Integer porta congue diam</p>
-              <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus. Nullam sodales nibh elit. Curabitur sit amet arcu nec tellus elementum.</p>
+              <p class="text">Negociación automatizada</p>
+              <p class="text-md">Optimiza tus operaciones con nuestro sistema de trading automatizado, diseñado para ejecutar transacciones basadas en algoritmos avanzados y maximizar tus oportunidades de éxito en el mercado.</p>
             </div>
              <!-- VI -->
              <div class="features-item">
               <div class="icon-wrapper">
                 <img src="./icons/default-icon.svg" alt="Feature">
               </div>
-              <p class="text">Praesent pretium faucibus ligula</p>
-              <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus. Nullam sodales nibh elit. Curabitur sit amet arcu nec tellus elementum.</p>
+              <p class="text">Investigación de inversiones</p>
+              <p class="text-md">Accede a investigaciones detalladas y análisis de expertos para tomar decisiones informadas y respaldadas por datos sólidos.</p>
             </div>
           </div>
         </div>
@@ -239,11 +240,11 @@
         <div class="container">
           <div class="two-columns-wrapper">
             <div class="quote">
-              <h4 class="quote-text">“Mauris sit amet nisi in turpis convallis aliquet eu et lectus. Nullam sodales nibh elit. Curabitur sit amet arcu nec tellus elementum.”</h4>
-              <p class="text-md">— Name Surname, CEO</p>
+              <h4 class="quote-text">“Nuestra nueva plataforma de trading es revolucionaria. Diseñada para todos los inversores, ofrece trading automatizado y acceso global, estableciendo un nuevo estándar en la industria.”</h4>
+              <p class="text-md">— Javier Jose Suarez Esparragoza, CEO de Davivienda</p>
             </div>
             <div class="ceo-quote-img-wrapper img-wrapper"> 
-              <img src="./images/about-us-image-DELETE.png" alt="section image">
+              <img src="./images/ceo3.png" alt="section image">
             </div>
           </div>
         </div>
@@ -255,31 +256,29 @@
         <div class="container">
           <div class="two-columns-wrapper">
             <div class="text-section">
-              <div class="badge">
-                <p class="text-sm">Title goes here</p>
-              </div>
-              <h4 class="display-md">Nulla sed diam ornare, porta risus ut, hendrerit nibh</h4>
-              <p class="text">Donec purus metus, lacinia eget nunc id, consequat maximus nulla. Maecenas velit mauris, imperdiet sit amet diam pretium, blandit efficitur turpis.</p>
-              <a href="./lead-form.html" class="button-cta">Button CTA <img src="./icons/arrow-right.svg" alt="button"></a>
+             
+              <h4 class="display-md">¿Cuanto voy a ganar?</h4>
+              <p class="text">Utiliza esta calculadora para saber cuánto podrías ganar en un determinado periodo de tiempo.</p>
+              <a href="./lead-form.html" class="button-cta">Cambia tu vida para siempre <img src="./icons/arrow-right.svg" alt="button"></a>
             </div>
             <div class="calculator">
               <div class="input-wrapper">
                 <div class="labels-wrapper">
-                  <label for="amount" class="text-sm">Amount</label> 
+                  <label for="amount" class="text-sm">Cantidad</label> 
                   <div id="amount-value">$1,000</div>
                 </div>
                   
-                  <input type="range" id="amount" class="calculator-slider" min="0" max="100000" step="500" value="1000">
+                  <input type="range" id="amount" class="calculator-slider" min="0" max="150000" step="500" value="1000">
               </div>
               <div class="input-wrapper">
                 <div class="labels-wrapper">
-                  <label for="period" class="text-sm">Investment period</label>  
-                  <div id="period-value">3 years</div>
+                  <label for="period" class="text-sm">Período de inversión</label>  
+                  <div id="period-value">1 día</div>
                 </div>
-                <input type="range" id="period" class="calculator-slider" min="1" max="10" step="1" value="3">
+                <input type="range" id="period" class="calculator-slider" min="1" max="10" step="1" value="4">
               </div>
               <div class="output">
-                  <p class="income-title text-md">Weekly income</p>
+                  <p class="income-title text-md">Ingresos diarios</p>
                   <span id="weekly-income">$0</span>
               </div>
           </div>
@@ -291,15 +290,13 @@
       <section class="section manual">
         <div class="container">
           <div class="text-section">
-            <div class="badge">
-              <p class="text-sm">Title goes here</p>
-            </div>
-            <h4 class="display-md">Curabitur in posuere purus</h4>
-            <p class="text">Cras non lacus ultricies, euismod leo et, pulvinar tellus. Integer porta congue diam non sollicitudin.</p>
+            
+            <h4 class="display-md">Funciones Clave de Nuestra Plataforma</h4>
+            <p class="text">Descubre herramientas y recursos diseñados para potenciar tu éxito en el trading.</p>
           </div>
           <div class="two-columns-wrapper">
             <div class="img-wrapper"> 
-              <img src="./images/about-us-image-DELETE.png" alt="section image">
+              <img src="./images/ceo4.png" alt="section image">
             </div>
             <div class="features-list">
               <!-- 1 -->
@@ -308,8 +305,8 @@
                   <img src="./icons/default-icon.svg" alt="Feature">
                 </div>
                 <div class="text-wrapper"> 
-                  <p class="text">Praesent pretium faucibus ligula</p>
-                  <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus. Nullam sodales nibh elit. Curabitur sit amet arcu nec tellus elementum.</p>
+                  <p class="text">Sistema de Trading Automatizado</p>
+                  <p class="text-md">Optimiza tus inversiones con un sistema que opera automáticamente según tus parámetros.</p>
                 </div>
               </div>
               <!-- 2 -->
@@ -318,8 +315,8 @@
                   <img src="./icons/default-icon.svg" alt="Feature">
                 </div>
                 <div class="text-wrapper"> 
-                  <p class="text">Praesent pretium faucibus ligula</p>
-                  <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus. Nullam sodales nibh elit. Curabitur sit amet arcu nec tellus elementum.</p>
+                  <p class="text">Asesoría Personalizada</p>
+                  <p class="text-md">Recibe orientación personalizada de expertos para mejorar tu estrategia de inversión.</p>
                 </div>
               </div>
               <!-- 3 -->
@@ -328,8 +325,8 @@
                   <img src="./icons/default-icon.svg" alt="Feature">
                 </div>
                 <div class="text-wrapper"> 
-                  <p class="text">Praesent pretium faucibus ligula</p>
-                  <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus. Nullam sodales nibh elit. Curabitur sit amet arcu nec tellus elementum.</p>
+                  <p class="text">Ejecución Rápida de Órdenes</p>
+                  <p class="text-md">Aprovecha la velocidad de nuestra plataforma para ejecutar órdenes en el momento oportuno.</p>
                 </div>
               </div>
               <!-- 4 -->
@@ -338,8 +335,8 @@
                   <img src="./icons/default-icon.svg" alt="Feature">
                 </div>
                 <div class="text-wrapper"> 
-                  <p class="text">Praesent pretium faucibus ligula</p>
-                  <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus. Nullam sodales nibh elit. Curabitur sit amet arcu nec tellus elementum.</p>
+                  <p class="text">Interfaz Intuitiva</p>
+                  <p class="text-md">Nuestra plataforma es fácil de navegar, lo que permite una experiencia de usuario fluida y eficiente.</p>
                 </div>
               </div>
             </div>
@@ -348,126 +345,7 @@
       </section>
       <!-- End of manual section -->
 
-      <!-- Pricing section -->
-       <section class="section pricing">
-        <div class="container">
-          <div class="text-section">
-            <div class="badge">
-              <p class="text-sm">Title goes here</p>
-            </div>
-            <h4 class="display-md">Lorem ipsum dolor sit amet</h4>
-            <p class="text">Donec purus metus, lacinia eget nunc id, consequat maximus nulla. Maecenas velit mauris, imperdiet sit amet diam pretium, blandit efficitur turpis.</p>
-          </div>
-        
-        <div class="pricing-carousel">
-          <!-- 1 -->
-          <div class="pricing-card">
-            <div class="icon-wrapper">
-              <img src="./icons/default-icon.svg" alt="Feature">
-            </div>
-            <h5 class="text-xl plan-name">Plan Name</h5>
-            <p class="card-price">$100</p>
-            <p class="text-md card-caption">Caption</p>
-            <ul class="features-list">
-              <li class="features-item">
-                <img src="./icons/Check.svg" alt="Feature name">
-                <p class="text-md">Lorem ipsum dolor sit amet</p>
-              </li>
-              <li class="features-item">
-                <img src="./icons/Check.svg" alt="Feature name">
-                <p class="text-md">Lorem ipsum dolor sit amet</p>
-              </li>
-              <li class="features-item">
-                <img src="./icons/Check.svg" alt="Feature name">
-                <p class="text-md">Lorem ipsum dolor sit amet</p>
-              </li>
-              <li class="features-item">
-                <img src="./icons/Check.svg" alt="Feature name">
-                <p class="text-md">Lorem ipsum dolor sit amet</p>
-              </li>
-              <li class="features-item">
-                <img src="./icons/Check.svg" alt="Feature name">
-                <p class="text-md">Lorem ipsum dolor sit amet</p>
-              </li>
-            </ul>
-            <div class="cta">
-                <a href="./lead-form.html" class="button-cta small">Button CTA</a>
-            </div>
-          </div>
-
-          <!-- 2 -->
-          <div class="pricing-card">
-            <div class="icon-wrapper">
-              <img src="./icons/default-icon.svg" alt="Feature">
-            </div>
-            <h5 class="text-xl plan-name">Plan Name</h5>
-            <p class="card-price">$250</p>
-            <p class="text-md card-caption">Caption</p>
-            <ul class="features-list">
-              <li class="features-item">
-                <img src="./icons/Check.svg" alt="Feature name">
-                <p class="text-md">Lorem ipsum dolor sit amet</p>
-              </li>
-              <li class="features-item">
-                <img src="./icons/Check.svg" alt="Feature name">
-                <p class="text-md">Lorem ipsum dolor sit amet</p>
-              </li>
-              <li class="features-item">
-                <img src="./icons/Check.svg" alt="Feature name">
-                <p class="text-md">Lorem ipsum dolor sit amet</p>
-              </li>
-              <li class="features-item">
-                <img src="./icons/Check.svg" alt="Feature name">
-                <p class="text-md">Lorem ipsum dolor sit amet</p>
-              </li>
-              <li class="features-item">
-                <img src="./icons/Check.svg" alt="Feature name">
-                <p class="text-md">Lorem ipsum dolor sit amet</p>
-              </li>
-            </ul>
-            <div class="cta">
-                <a href="./lead-form.html" class="button-cta small">Button CTA</a>
-            </div>
-          </div>
-
-          <!-- 3 -->
-          <div class="pricing-card">
-            <div class="icon-wrapper">
-              <img src="./icons/default-icon.svg" alt="Feature">
-            </div>
-            <h5 class="text-xl plan-name">Plan Name</h5>
-            <p class="card-price">$500</p>
-            <p class="text-md card-caption">Caption</p>
-            <ul class="features-list">
-              <li class="features-item">
-                <img src="./icons/Check.svg" alt="Feature name">
-                <p class="text-md">Lorem ipsum dolor sit amet</p>
-              </li>
-              <li class="features-item">
-                <img src="./icons/Check.svg" alt="Feature name">
-                <p class="text-md">Lorem ipsum dolor sit amet</p>
-              </li>
-              <li class="features-item">
-                <img src="./icons/Check.svg" alt="Feature name">
-                <p class="text-md">Lorem ipsum dolor sit amet</p>
-              </li>
-              <li class="features-item">
-                <img src="./icons/Check.svg" alt="Feature name">
-                <p class="text-md">Lorem ipsum dolor sit amet</p>
-              </li>
-              <li class="features-item">
-                <img src="./icons/Check.svg" alt="Feature name">
-                <p class="text-md">Lorem ipsum dolor sit amet</p>
-              </li>
-            </ul>
-            <div class="cta">
-                <a href="./lead-form.html" class="button-cta small">Button CTA</a>
-            </div>
-          </div>
-          </div>
-        </div>
-       </section>
-      <!-- End of Pricing section -->
+      
 
       <!-- section License -->
        <section class="section license">
@@ -475,17 +353,15 @@
           <div class="two-columns-wrapper">
 
             <div class="text-section">
-              <div class="badge">
-                <p class="text-sm">Title goes here</p>
-              </div>
-              <h4 class="display-md">Nulla sed diam ornare, porta risus ut, hendrerit nibh</h4>
-              <p class="text">Donec purus metus, lacinia eget nunc id, consequat maximus nulla. Maecenas velit mauris, imperdiet sit amet diam pretium, blandit efficitur turpis.
-              </br></br>Donec purus metus, lacinia eget nunc id, consequat maximus nulla. Maecenas velit mauris, imperdiet sit amet diam pretium, blandit efficitur turpis.</p>
-              <a href="./lead-form.html" class="button-cta">Button CTA <img src="./icons/arrow-right.svg" alt="button"></a>
+             
+              <h4 class="display-md">Nuestra Licencia y Cumplimiento</h4>
+              <p class="text">Operamos bajo una licencia regulada que garantiza que todas nuestras actividades cumplan con los más altos estándares de seguridad y transparencia.
+              </br></br>Nuestro compromiso con el cumplimiento normativo protege tus inversiones y asegura que operas en un entorno financiero seguro y confiable.</p>
+              <a href="./lead-form.html" class="button-cta">Conoce Más <img src="./icons/arrow-right.svg" alt="button"></a>
             </div>
 
             <div class="img-wrapper img-wrapper"> 
-              <img src="./images/about-us-image-DELETE.png" alt="section image">
+              <img src="./images/2222.png" alt="section image">
             </div>
           </div>
         </div>
@@ -496,34 +372,32 @@
        <section class="section testimonals">
         <div class="container">
           <div class="text-section">
-            <div class="badge">
-              <p class="text-sm">Title goes here</p>
-            </div>
-            <h4 class="display-md">Lorem ipsum dolor sit amet</h4>
-            <p class="text">Donec at mauris nunc. Curabitur non congue sapien, sit amet vestibulum libero. Mauris neque sem, mattis non nibh in, porta lobortis quam.</p>
+            
+            <h4 class="display-md">Testimonios de Nuestros Clientes</h4>
+            <p class="text">Lo que nuestros usuarios dicen sobre su experiencia con nuestra plataforma.</p>
           </div>
 
           <div class="testimonials-carousel">
             <!-- 1 -->
             <div class="testimonials-card">
               <img class="avatar" src="./images/Avatar.png" alt="Avatar">
-              <p class="card-text">Nulla sed diam ornare, porta risus ut, hendrerit nibh. Cras sit amet accumsan velit, et iaculis justo. Maecenas elementum eros vitae purus aliquam, vel pretium odio efficitur.</p>
-              <p class="text-lg card-name">Name Surname</p>
-              <p class="text-md caption">Caption</p>
+              <p class="card-text">Gracias a la plataforma, he podido diversificar mis inversiones y obtener excelentes resultados. La interfaz es fácil de usar y el soporte es increíble.</p>
+              <p class="text-lg card-name">Ana Gómez</p>
+              <p class="text-md caption">Profesor</p>
             </div>
             <!-- 2 -->
             <div class="testimonials-card">
               <img class="avatar" src="./images/Avatar.png" alt="Avatar">
-              <p class="card-text">Nulla sed diam ornare, porta risus ut, hendrerit nibh. Cras sit amet accumsan velit, et iaculis justo. Maecenas elementum eros vitae purus aliquam, vel pretium odio efficitur.</p>
-              <p class="text-lg card-name">Name Surname</p>
-              <p class="text-md caption">Caption</p>
+              <p class="card-text">La automatización del trading ha sido un cambio de juego para mí. Ahora puedo gestionar mis inversiones de manera más eficiente y segura.</p>
+              <p class="text-lg card-name">Carlos Rodríguez</p>
+              <p class="text-md caption">Soldador</p>
             </div>
             <!-- 3 -->
             <div class="testimonials-card">
               <img class="avatar" src="./images/Avatar.png" alt="Avatar">
-              <p class="card-text">Nulla sed diam ornare, porta risus ut, hendrerit nibh. Cras sit amet accumsan velit, et iaculis justo. Maecenas elementum eros vitae purus aliquam, vel pretium odio efficitur.</p>
-              <p class="text-lg card-name">Name Surname</p>
-              <p class="text-md caption">Caption</p>
+              <p class="card-text">La asesoría personalizada me ha ayudado a entender mejor el mercado y a tomar decisiones informadas. Recomiendo esta plataforma a todos los inversionistas.</p>
+              <p class="text-lg card-name">María Fernández</p>
+              <p class="text-md caption">Agricultor</p>
             </div>
           </div>
         </div>
@@ -572,18 +446,7 @@
           </div>
           <p class="text-md">Cras non lacus ultricies, euismod leo et, pulvinar tellus. Integer porta congue diam non sollicitudin.</p>
         </div>
-        <!-- footer navigation block -->
-        <div class="footer-nav">
-          <div class="group">
-            <a class="footer-navigation-link" href="#">Menu item</a>
-            <a class="footer-navigation-link" href="#">Menu item</a>
-            <a class="footer-navigation-link" href="#">Menu item</a>
-          </div>
-          <div class="group">
-            <a class="footer-navigation-link" href="#">Menu item</a>
-            <a class="footer-navigation-link" href="#">Menu item</a>
-            <a class="footer-navigation-link" href="#">Menu item</a>
-          </div>
+        
         </div>
       </div>
       <!-- copyright block -->

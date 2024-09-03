@@ -62,6 +62,8 @@ document.addEventListener("DOMContentLoaded", function() {
     appendArrows: $(".carousel-buttons"),
     prevArrow: $(".slider-left"),
     nextArrow: $(".slider-right"),
+    autoplay: true, // Enables auto-slide
+    autoplaySpeed: 5000, // Auto-slide interval in milliseconds (5 seconds)
   });
 
   // pricing section carousel
@@ -152,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function() {
       periodValue.textContent = `${period} year${period > 1 ? 's' : ''}`;
 
       // Example formula for weekly income calculation
-      const annualInterestRate = 0.5;
+      const annualInterestRate = 0.32;
       const totalIncome = amount * Math.pow(1 + annualInterestRate, period);
       const weeklyIncomeValue = ((totalIncome - amount) / (period * 52)).toFixed(2);
 
