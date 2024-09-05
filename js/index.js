@@ -50,6 +50,40 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
 
+  const navigationLinks = document.querySelectorAll('.navigation-link:not(.new-page)');
+
+  navigationLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        console.log('click')
+        
+        // Get the target section id from the href attribute
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        
+        const headerHeight = headerContainer.offsetHeight;
+        
+        // Get the top position of the section with offset
+        const sectionPosition = targetSection.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+        
+        // Smooth scroll to the desired position
+        window.scrollTo({
+            top: sectionPosition,
+            behavior: 'smooth'
+        });
+
+        mobileMenu.classList.remove('opened')
+        document.body.classList.remove('no-scroll');
+        headerContainer.classList.remove('no-scroll');
+        toggleCheckbox.checked = false;
+
+        setTimeout(() => {
+          mobileMenu.style.display = "none";
+        }, 300);
+    });
+});
+
 
   // news section Slick slider initialization
   $(".news .carousel").slick({

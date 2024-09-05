@@ -18,27 +18,59 @@
     <link rel="stylesheet" href="./sass/slick-theme.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@24.0.1/build/css/intlTelInput.css">
     <link rel="stylesheet" href="./sass/main.css" />
+    <style>
+
+      .ceo-quote-img-wrapper img{
+        max-height: 500px;
+        margin: auto;
+      }
+      .icon-features{
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .icon-features img{
+        max-width: 100px;
+      }
+      .manual .icon-wrapper{
+        background: #4E6CFF;
+      }
+      .manual .icon-wrapper{
+        font-weight: 700;
+        color: #fff;
+        font-size: 20px;
+      }
+      .manual .icon-wrapper:after{
+        border-color: #4E6CFF;
+      }
+      @media screen and (min-width: 1024px) {
+        .ceo-quote .two-columns-wrapper{
+          gap: 25px;
+        }
+      }
+    </style>
   </head>
 
   <body class="page home-page">
-
     <!-- HEADER  -->
-
     <header>
       <div class="container header-container">
         <!-- Desktop header -->
         <div class="logo header-logo">
-            <a href="./index.html">Davivienda</a>
+            <a href="./index.html">
+              <img src="./images/logo.png">
+            </a>
         </div>
         <nav class="desktop-navigation">
-            <a class="navigation-link" href="#" onclick="document.location.hash='';return false;">Inicio</a>
-            <a class="navigation-link" href="#" onclick="document.location.hash='';return false;">Acerca de Nosotros</a>
-            <a class="navigation-link" href="#" onclick="document.location.hash='';return false;">Servicios</a>
-            <a class="navigation-link" href="#" onclick="document.location.hash='';return false;">Testimonios</a>
-            <a class="navigation-link" href="./lead-form.html">Contacto</a>
+            <a class="navigation-link" href="#about-us">Nosotros</a>
+            <a class="navigation-link" href="#features">Ventajas</a>
+            <a class="navigation-link" href="#calculator">Calculadora</a>
+            <a class="navigation-link" href="#manual">Capacidades</a>
+            <a class="navigation-link" href="#license">Licencia</a>
+            <a class="navigation-link" href="#reviews">Reseñas</a>
+            <a class="navigation-link new-page" href="./lead-form.html">Registro</a>
         </nav>
         <div class="desktop-cta">
-            <a href="./lead-form.html" class="button-cta small">Cambia tu vida <img src="./icons/arrow-right.svg" alt="button"></a>
+            <a href="./lead-form.html" class="button-cta small">Inscripción <img src="./icons/arrow-right.svg" alt="button"></a>
         </div>
         <div class="mobile-menu-icon">
           <input type="checkbox" id="toggle">
@@ -48,89 +80,46 @@
         <!-- Mobile Menu -->
         <div class="mobile-menu">
           <nav class="mobile-navigation">
-            <a class="navigation-link" href="#" onclick="document.location.hash='';return false;">Menu item</a>
-            <a class="navigation-link" href="#" onclick="document.location.hash='';return false;">Menu item</a>
-            <a class="navigation-link" href="#" onclick="document.location.hash='';return false;">Menu item</a>
-            <a class="navigation-link" href="#" onclick="document.location.hash='';return false;">Menu item</a>
-            <a class="navigation-link" href="#" onclick="document.location.hash='';return false;">Menu item</a>
-            <a class="navigation-link" href="#" onclick="document.location.hash='';return false;">Menu item</a>
+            <a class="navigation-link" href="#about-us">Nosotros</a>
+            <a class="navigation-link" href="#features">Ventajas</a>
+            <a class="navigation-link" href="#calculator">Calculadora</a>
+            <a class="navigation-link" href="#manual">Capacidades</a>
+            <a class="navigation-link" href="#license">Licencia</a>
+            <a class="navigation-link" href="#reviews">Reseñas</a>
+            <a class="navigation-link new-page" href="./lead-form.html">Registro</a>
           </nav>
           <div class="mobile-menu-footer">
             <div class="logo header-logo">
-                <a href="./index.html">Company logo</a>
+              <a href="./index.html">
+                <img src="./images/logo.png">
+              </a>
             </div>
             <p class="text-md">Cras non lacus ultricies, euismod leo et, pulvinar tellus. Integer porta congue diam non sollicitudin.</p>
             <p class=" text-md rights-text">© 2077 Untitled UI. All rights reserved.</p>
           </div>
         </div>
       </div>
-     </header>
-
+  </header>
     <!-- END OF HEADER -->
 
     <main>
 
-    <!-- HERO Section -->
-    <section class="section hero" style="position: relative; overflow: hidden; height: 100vh;">
-        <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; ">
-            <source src="./images/video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <!-- Dark overlay -->
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); z-index: 0;"></div>
-        
-        <div class="container" style="position: relative; z-index: 2; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center;">
+      <!-- HERO Section -->
+       <seciton class="section hero">
+        <div class="container">
+          <div class="two-columns">
             <div class="text-section">
-              
-                <h1 style="color: white;">Tu Compañero en el Camino hacia el Éxito Financiero</h1>
-                <p class="text" style="color: white;">Descubre oportunidades financieras con Davivienda. Nuestra plataforma te ofrece las herramientas para tomar decisiones informadas y maximizar tus inversiones, ya seas un inversor nuevo o experimentado.</p>
-                <a href="./lead-form.html" class="button-cta">Cambia tu vida <img src="./icons/arrow-right.svg" alt="button"></a>
+              <h1>Reciba dividendos a partir de 300 $ semanales</h1>
+              <p class="text">Invierta en un sistema bancario próspero con el Banco de Salvador</p>
+              <a href="./lead-form.html" class="button-cta">Inscripción <img src="./icons/arrow-right.svg" alt="button"></a>
             </div>
-        </div>
-    </section>
-    <!-- End of HERO Section -->
-
-
-      <!-- About Us section -->
-      <section class="section about-us">
-      <div class="container">
-        <div class="text-section">
-          
-          <h3 class="display-md">Conoce a Davivienda</h3>
-          <p class="text">En Davivienda, estamos dedicados a proporcionar soluciones de inversión que se adaptan a las necesidades de nuestros clientes. Nuestra misión es hacer que el trading sea accesible, eficiente y rentable para todos, desde inversores novatos hasta expertos en finanzas.</p>
-        </div>
-        <div class="about-us-img-wrapper img-wrapper">
-          <img src="./images/2211.png" alt="section image">
-        </div>
-        <div class="four-columns highlights">
-          <!-- I -->
-          <div class="highglight-item">
-            <h4 class="display-xl">600+</h4>
-            <p class="text-lg">Usuarios Registrados</p>
-            <p class="text-md">Este es el número de nuevos clientes que se han registrado esta semana, confiando en nuestra plataforma para iniciar su viaje financiero.</p>
-          </div>
-          <!-- II -->
-          <div class="highglight-item">
-            <h4 class="display-xl">$10M+</h4>
-            <p class="text-lg">Volumen de Operaciones</p>
-            <p class="text-md">Nuestra plataforma ha gestionado más de $10 millones en volumen de operaciones solo en el último mes, demostrando nuestra capacidad y confianza en el mercado.</p>
-          </div>
-          <!-- III -->
-          <div class="highglight-item">
-            <h4 class="display-xl">98%</h4>
-            <p class="text-lg">Satisfacción del Cliente</p>
-            <p class="text-md">El 98% de nuestros clientes han expresado un alto nivel de satisfacción, valorando la eficacia y el soporte continuo que ofrecemos.</p>
-          </div>
-          <!-- IV -->
-          <div class="highglight-item">
-            <h4 class="display-xl">50,000+</h4>
-            <p class="text-lg">Clientes satisfechos</p>
-            <p class="text-md">Más de 50,000 clientes han confiado en nosotros y están satisfechos con los resultados obtenidos a través de nuestra plataforma.</p>
+            <div class="hero-img-wrapper img-wrapper">
+               <video src="video/SV_offer.mp4" controls></video>
+            </div>
           </div>
         </div>
-      </div>
-      </section>
-      <!-- End of About Us section -->
+       </seciton>
+      <!-- End of HERO Section -->
 
       <!-- News Carousel Section -->
         <section class="section news">
@@ -138,23 +127,24 @@
             <div class="carousel">
               <!-- 1st slide -->
               <div class="slide">
-                <img src="./images/tiem.png" alt="NY Times" class="slide-icon">
-                <h2 class="carousel-title">Davivienda revoluciona el trading en Colombia con su nueva plataforma automatizada.</h2>
-                <p class="text-lg source">El Tiempo</p>
-              
+                <img src="./icons/Logo_de_La_Prensa_Grafica.png" alt="NY Times" class="slide-icon">
+                <h2 class="carousel-title">El Banco Central de El Salvador lanza un proyecto de inversión abierto a todos los ciudadanos salvadoreños.</h2>
+                <p class="text-md source">La Prensa Gráfica</p>
+                <br>
               </div>
               <!-- 2nd slide -->
               <div class="slide">
-                <img src="./images/especta.png" alt="NY Times" class="slide-icon">
-                <h2 class="carousel-title">Davivienda eleva el estándar del trading con su innovadora plataforma.</h2>
-                <p class="text-lg source">El Espectador</p>
-            
+                <img src="./icons/elmundo.png" alt="EL MUNDO" class="slide-icon">
+                <h2 class="carousel-title">ECONOMÍA: ¡Salvadoreños ganan dinero invirtiendo en un banco central aprobado por el Gobierno!</h2>
+                <p class="text-md source">El Mundo</p>
+                <br>
               </div>
               <!-- 3rd slide -->
               <div class="slide">
-                <img src="./images/sem.png" alt="NY Times" class="slide-icon">
-                <h2 class="carousel-title">Nulla sed diam ornare, porta risus ut, hendrerit nibh. Cras sit amet accumsan velit, et iaculis justo.</h2>
-                <p class="text-lg source">Semana</p>
+                <img src="./icons/elsalvador.com logo.png" alt="elsalvador.com" class="slide-icon">
+                <h2 class="carousel-title">El Banco Central de El Salvador lanza un proyecto de inversión abierto a todos los salvadoreños.</h2>
+                <p class="text-md source">ElSalvador.com</p>
+                <br>
               </div>
             </div>
             <!-- Custom slider buttons -->
@@ -170,65 +160,107 @@
         </section>
       <!-- End of News Carousel Section -->
 
-      
-
-      <!-- Features Section -->
-       <section class="section features">
+      <!-- About Us section -->
+       <section class="section about-us" id="about-us">
         <div class="container">
           <div class="text-section">
             <div class="badge">
+              <p class="text-sm">Nuestros logros</p>
             </div>
-            <h4 class="display-md">VENTAJAS DE LA PLATAFORMA DAVIVIENDA</h4>
-            <p class="text">En Davivienda, ofrecemos un conjunto completo de servicios diseñados para cubrir todas tus necesidades de inversión. Desde trading personalizado y automatizado hasta asesoría experta y acceso a mercados globales, estamos aquí para ayudarte a alcanzar tus metas financieras con confianza y conocimiento.</p>
+            <h3 class="display-md">Cifras que nos enorgullecen</h3>
+          </div>
+          <!-- <div class="about-us-img-wrapper img-wrapper">
+            <img src="./images/about-us-image-DELETE.png" alt="section image">
+          </div> -->
+          <div class="four-columns highlights">
+            <!-- I -->
+            <div class="highglight-item">
+              <h4 class="display-xl">12,000+</h4>
+              <p class="text-lg">Clientes satisfechos</p>
+              <!-- <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus.</p> -->
+            </div>
+            <!-- II -->
+            <div class="highglight-item">
+              <h4 class="display-xl">214%</h4>
+              <p class="text-lg">Rentabilidad media de la inversión</p>
+              <!-- <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus.</p> -->
+            </div>
+            <!-- III -->
+            <div class="highglight-item">
+              <h4 class="display-xl">22,000,000$+</h4>
+              <p class="text-lg">Ganado a través de la plataforma</p>
+              <!-- <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus.</p> -->
+            </div>
+            <!-- IV -->
+            <div class="highglight-item">
+              <h4 class="display-xl">10 días</h4>
+              <p class="text-lg">Plazo medio de recuperación de la inversión</p>
+              <!-- <p class="text-md">Mauris sit amet nisi in turpis convallis aliquet eu et lectus.</p> -->
+            </div>
+          </div>
+        </div>
+       </section>
+      <!-- End of About Us section -->
+
+      <!-- Features Section -->
+       <section class="section features" id="features">
+        <div class="container">
+          <div class="text-section">
+            <div class="badge">
+              <p class="text-sm">De 1.000 dólares por cada salvadoreño</p>
+            </div>
+            <h4 class="display-md">Gracias a la inteligencia artificial, cada salvadoreño puede ganar a partir de 1.000 dólares</h4>
+            <p class="text">La inteligencia artificial desarrollada encontrará una buena oferta para usted con una precisión del 95%.</p>
           </div>
           <div class="three-columns features-list">
             <!-- I -->
             <div class="features-item">
-              <div class="icon-wrapper">
-                <img src="./icons/default-icon.svg" alt="Feature">
+              <div class="icon-features">
+                <img src="./images/img1_book.png" alt="Feature">
               </div>
-              <p class="text">Trading Personalizado</p>
-              <p class="text-md">Adapta tu experiencia de trading según tus necesidades con nuestras herramientas personalizables.</p>
+              <p class="text">Pagos instantáneos en su cuenta bancaria</p>
+              <p class="text-md">Gracias a nuestro sistema podrá ver su primer beneficio en 3 horas. </p>
             </div>
              <!-- II -->
              <div class="features-item">
-              <div class="icon-wrapper">
-                <img src="./icons/default-icon.svg" alt="Feature">
+              <div class="icon-features">
+                <img src="./images/img2_book.png" alt="Feature">
               </div>
-              <p class="text">Asesoría Financiera</p>
-              <p class="text-md">Recibe orientación de expertos para tomar decisiones de inversión más inteligentes.</p>
+              <p class="text">Precisión de hasta el 95% con la posibilidad de abrir hasta 100 operaciones al día</p>
+              <p class="text-md">Nuestra inteligencia artificial es capaz de operar incluso en los momentos de mayor inflación.</p>
             </div>
              <!-- III -->
              <div class="features-item">
-              <div class="icon-wrapper">
-                <img src="./icons/default-icon.svg" alt="Feature">
+              <div class="icon-features">
+                <img src="./images/img3_book.png" alt="Feature">
               </div>
-              <p class="text">Acceso a Mercados Globales</p>
-              <p class="text-md">Participa en los mercados internacionales más importantes, todo desde una sola plataforma.</p>
+              <p class="text">Apoyo al Banco Central de El Salvador</p>
+              <p class="text-md">Nuestra plataforma recibió el apoyo del banco central de El Salvador durante sus tres primeros días de funcionamiento.</p>
             </div>
              <!-- IV -->
              <div class="features-item">
-              <div class="icon-wrapper">
-                <img src="./icons/default-icon.svg" alt="Feature">
+              <div class="icon-features">
+                <img src="./images/img4_book.png" alt="Feature">
               </div>
-              <p class="text">Recursos Educativos</p>
-              <p class="text-md">Amplía tu conocimiento con cursos, seminarios y análisis de mercado diseñados para todos los niveles de experiencia.</p>
+              <p class="text">No prestamos</p>
+              <p class="text-md">Nuestra plataforma no ofrece oportunidades de crédito.</p>
             </div>
              <!-- V -->
              <div class="features-item">
-              <div class="icon-wrapper">
-                <img src="./icons/default-icon.svg" alt="Feature">
+              <div class="icon-features">
+                <img src="./images/img5_book.png" alt="Feature">
               </div>
-              <p class="text">Negociación automatizada</p>
-              <p class="text-md">Optimiza tus operaciones con nuestro sistema de trading automatizado, diseñado para ejecutar transacciones basadas en algoritmos avanzados y maximizar tus oportunidades de éxito en el mercado.</p>
+              <p class="text">Asistencia 24 horas al día</p>
+              <p class="text-md">Tras inscribirse, se pondrá en contacto con usted un asesor financiero personal. Estará en contacto con usted las 24 horas del día y podrá ayudarle en todas las fases de nuestra cooperación.</p>
             </div>
              <!-- VI -->
              <div class="features-item">
-              <div class="icon-wrapper">
-                <img src="./icons/default-icon.svg" alt="Feature">
+              <!-- icon-wrapper -->
+              <div class="icon-features">
+                <img src="./images/img6_book.png" alt="Feature">
               </div>
-              <p class="text">Investigación de inversiones</p>
-              <p class="text-md">Accede a investigaciones detalladas y análisis de expertos para tomar decisiones informadas y respaldadas por datos sólidos.</p>
+              <p class="text">‘Estamos destruyendo la economía’</p>
+              <p class="text-md">Ya son ocho los bancos que nos han pedido cerrar el proyecto. Según sus palabras, ‘Estamos destruyendo la economía’. Nuestro verdadero objetivo es hacer felices a todos los salvadoreños.</p>
             </div>
           </div>
         </div>
@@ -236,15 +268,15 @@
       <!-- End of Features Section -->
 
       <!-- CEO Quote section -->
-       <section class="section ceo-quote">
+       <section class="section ceo-quote" id="quote">
         <div class="container">
           <div class="two-columns-wrapper">
             <div class="quote">
-              <h4 class="quote-text">“Nuestra nueva plataforma de trading es revolucionaria. Diseñada para todos los inversores, ofrece trading automatizado y acceso global, estableciendo un nuevo estándar en la industria.”</h4>
-              <p class="text-md">— Javier Jose Suarez Esparragoza, CEO de Davivienda</p>
+              <h4 class="quote-text">“Gracias a nuestro proyecto de inversión, cada ciudadano de El Salvador podrá recibir dividendos garantizados del gobierno.”</h4>
+              <p class="text-md">— Douglas Rodríguez, CEO</p>
             </div>
-            <div class="ceo-quote-img-wrapper img-wrapper"> 
-              <img src="./images/ceo3.png" alt="section image">
+            <div class="ceo-quote-img-wrapper img-wrapper "> 
+              <img src="./images/BCR_ceo1.jpg" alt="section image">
             </div>
           </div>
         </div>
@@ -252,33 +284,35 @@
       <!-- End of CEO Quote section -->
 
       <!-- Calculator Section -->
-       <section class="section calculator-section">
+       <section class="section calculator-section" id="calculator">
         <div class="container">
           <div class="two-columns-wrapper">
             <div class="text-section">
-             
-              <h4 class="display-md">¿Cuanto voy a ganar?</h4>
-              <p class="text">Utiliza esta calculadora para saber cuánto podrías ganar en un determinado periodo de tiempo.</p>
-              <a href="./lead-form.html" class="button-cta">Cambia tu vida para siempre <img src="./icons/arrow-right.svg" alt="button"></a>
+              <div class="badge">
+                <p class="text-sm">Calculadora de inversiones</p>
+              </div>
+              <h4 class="display-md">Hemos desarrollado una calculadora certificada basada en los ingresos de nuestros clientes.</h4>
+              <p class="text">Con ella, podrá calcular sus ingresos por un período determinado.</p>
+              <a href="./lead-form.html" class="button-cta">Inscripción<img src="./icons/arrow-right.svg" alt="button"></a>
             </div>
             <div class="calculator">
               <div class="input-wrapper">
                 <div class="labels-wrapper">
-                  <label for="amount" class="text-sm">Cantidad</label> 
+                  <label for="amount" class="text-sm">Amount</label> 
                   <div id="amount-value">$1,000</div>
                 </div>
                   
-                  <input type="range" id="amount" class="calculator-slider" min="0" max="150000" step="500" value="1000">
+                  <input type="range" id="amount" class="calculator-slider" min="250" max="100000" step="500" value="1000">
               </div>
               <div class="input-wrapper">
                 <div class="labels-wrapper">
-                  <label for="period" class="text-sm">Período de inversión</label>  
-                  <div id="period-value">1 día</div>
+                  <label for="period" class="text-sm">Investment period</label>  
+                  <div id="period-value">3 month</div>
                 </div>
-                <input type="range" id="period" class="calculator-slider" min="1" max="10" step="1" value="4">
+                <input type="range" id="period" class="calculator-slider" min="1" max="12" step="1" value="3">
               </div>
               <div class="output">
-                  <p class="income-title text-md">Ingresos diarios</p>
+                  <p class="income-title text-md">Weekly income</p>
                   <span id="weekly-income">$0</span>
               </div>
           </div>
@@ -287,56 +321,59 @@
        </section>
       <!-- End of Calculator Section -->
 
-      <section class="section manual">
+      <!-- Manual section -->
+      <section class="section manual" id="manual">
         <div class="container">
           <div class="text-section">
-            
-            <h4 class="display-md">Funciones Clave de Nuestra Plataforma</h4>
-            <p class="text">Descubre herramientas y recursos diseñados para potenciar tu éxito en el trading.</p>
+            <div class="badge">
+              <p class="text-sm">Obligatorio</p>
+            </div>
+            <h4 class="display-md">DEBE leer esto antes de presentar su solicitud.</h4>
+            <p class="text">Lee cada punto a continuación, gracias a esto podrás ser verificado y empezar a ganar en poco tiempo.</p>
           </div>
           <div class="two-columns-wrapper">
-            <div class="img-wrapper"> 
-              <img src="./images/ceo4.png" alt="section image">
-            </div>
+            <!-- <div class="img-wrapper"> 
+              <img src="./images/about-us-image-DELETE.png" alt="section image">
+            </div> -->
             <div class="features-list">
               <!-- 1 -->
               <div class="features-item">
                 <div class="icon-wrapper">
-                  <img src="./icons/default-icon.svg" alt="Feature">
+                  1
                 </div>
                 <div class="text-wrapper"> 
-                  <p class="text">Sistema de Trading Automatizado</p>
-                  <p class="text-md">Optimiza tus inversiones con un sistema que opera automáticamente según tus parámetros.</p>
+                  <p class="text">Familiarícese con los paquetes de inversión y haga su elección.</p>
+                  <p class="text-md">A continuación encontrará paquetes de inversión y sus descripciones. Su asesor financiero personal también podrá ayudarle a elegir.</p>
                 </div>
               </div>
               <!-- 2 -->
               <div class="features-item">
                 <div class="icon-wrapper">
-                  <img src="./icons/default-icon.svg" alt="Feature">
+                  2
                 </div>
                 <div class="text-wrapper"> 
-                  <p class="text">Asesoría Personalizada</p>
-                  <p class="text-md">Recibe orientación personalizada de expertos para mejorar tu estrategia de inversión.</p>
+                  <p class="text">Deje sus datos de contacto en el siguiente formulario.</p>
+                  <p class="text-md">Para acceder a la plataforma, debe responder a una llamada de su asesor financiero personal. La llamada tendrá lugar durante la jornada laboral.</p>
                 </div>
               </div>
               <!-- 3 -->
               <div class="features-item">
                 <div class="icon-wrapper">
-                  <img src="./icons/default-icon.svg" alt="Feature">
+                  3
                 </div>
                 <div class="text-wrapper"> 
-                  <p class="text">Ejecución Rápida de Órdenes</p>
-                  <p class="text-md">Aprovecha la velocidad de nuestra plataforma para ejecutar órdenes en el momento oportuno.</p>
+                  <p class="text">Tendrás que esperar la llamada.</p>
+                  <p class="text-md">Su asesor financiero personal se pondrá en contacto con usted lo antes posible. No deje de esperar su llamada.</p>
                 </div>
               </div>
               <!-- 4 -->
               <div class="features-item">
                 <div class="icon-wrapper">
-                  <img src="./icons/default-icon.svg" alt="Feature">
+                  4
                 </div>
                 <div class="text-wrapper"> 
-                  <p class="text">Interfaz Intuitiva</p>
-                  <p class="text-md">Nuestra plataforma es fácil de navegar, lo que permite una experiencia de usuario fluida y eficiente.</p>
+                  <p class="text">Una vez registrado, se le dará acceso a la plataforma.</p>
+                  <p class="text-md">En la plataforma, podrá utilizar nuestra inteligencia artificial sin problemas.</p>
                 </div>
               </div>
             </div>
@@ -345,23 +382,144 @@
       </section>
       <!-- End of manual section -->
 
-      
+      <!-- Pricing section -->
+       <!-- <section class="section pricing">
+        <div class="container">
+          <div class="text-section">
+            <div class="badge">
+              <p class="text-sm">Title goes here</p>
+            </div>
+            <h4 class="display-md">Lorem ipsum dolor sit amet</h4>
+            <p class="text">Donec purus metus, lacinia eget nunc id, consequat maximus nulla. Maecenas velit mauris, imperdiet sit amet diam pretium, blandit efficitur turpis.</p>
+          </div>
+        
+        <div class="pricing-carousel"> -->
+          <!-- 1 -->
+          <!-- <div class="pricing-card">
+            <div class="icon-wrapper">
+              <img src="./icons/default-icon.svg" alt="Feature">
+            </div>
+            <h5 class="text-xl plan-name">Inicio</h5>
+            <p class="card-price">$250</p>
+            <p class="text-md card-caption">Caption</p>
+            <ul class="features-list">
+              <li class="features-item">
+                <img src="./icons/Check.svg" alt="Feature name">
+                <p class="text-md">Lorem ipsum dolor sit amet</p>
+              </li>
+              <li class="features-item">
+                <img src="./icons/Check.svg" alt="Feature name">
+                <p class="text-md">Lorem ipsum dolor sit amet</p>
+              </li>
+              <li class="features-item">
+                <img src="./icons/Check.svg" alt="Feature name">
+                <p class="text-md">Lorem ipsum dolor sit amet</p>
+              </li>
+              <li class="features-item">
+                <img src="./icons/Check.svg" alt="Feature name">
+                <p class="text-md">Lorem ipsum dolor sit amet</p>
+              </li>
+              <li class="features-item">
+                <img src="./icons/Check.svg" alt="Feature name">
+                <p class="text-md">Lorem ipsum dolor sit amet</p>
+              </li>
+            </ul>
+            <div class="cta">
+                <a href="./lead-form.html" class="button-cta small">Inscripción</a>
+            </div>
+          </div> -->
+
+          <!-- 2 -->
+          <!-- <div class="pricing-card">
+            <div class="icon-wrapper">
+              <img src="./icons/default-icon.svg" alt="Feature">
+            </div>
+            <h5 class="text-xl plan-name">Plan Name</h5>
+            <p class="card-price">$450</p>
+            <p class="text-md card-caption">Caption</p>
+            <ul class="features-list">
+              <li class="features-item">
+                <img src="./icons/Check.svg" alt="Feature name">
+                <p class="text-md">Lorem ipsum dolor sit amet</p>
+              </li>
+              <li class="features-item">
+                <img src="./icons/Check.svg" alt="Feature name">
+                <p class="text-md">Lorem ipsum dolor sit amet</p>
+              </li>
+              <li class="features-item">
+                <img src="./icons/Check.svg" alt="Feature name">
+                <p class="text-md">Lorem ipsum dolor sit amet</p>
+              </li>
+              <li class="features-item">
+                <img src="./icons/Check.svg" alt="Feature name">
+                <p class="text-md">Lorem ipsum dolor sit amet</p>
+              </li>
+              <li class="features-item">
+                <img src="./icons/Check.svg" alt="Feature name">
+                <p class="text-md">Lorem ipsum dolor sit amet</p>
+              </li>
+            </ul>
+            <div class="cta">
+                <a href="./lead-form.html" class="button-cta small">Inscripción</a>
+            </div>
+          </div> -->
+
+          <!-- 3 -->
+          <!-- <div class="pricing-card">
+            <div class="icon-wrapper">
+              <img src="./icons/default-icon.svg" alt="Feature">
+            </div>
+            <h5 class="text-xl plan-name">Plan Name</h5>
+            <p class="card-price">$950</p>
+            <p class="text-md card-caption">Caption</p>
+            <ul class="features-list">
+              <li class="features-item">
+                <img src="./icons/Check.svg" alt="Feature name">
+                <p class="text-md">Lorem ipsum dolor sit amet</p>
+              </li>
+              <li class="features-item">
+                <img src="./icons/Check.svg" alt="Feature name">
+                <p class="text-md">Lorem ipsum dolor sit amet</p>
+              </li>
+              <li class="features-item">
+                <img src="./icons/Check.svg" alt="Feature name">
+                <p class="text-md">Lorem ipsum dolor sit amet</p>
+              </li>
+              <li class="features-item">
+                <img src="./icons/Check.svg" alt="Feature name">
+                <p class="text-md">Lorem ipsum dolor sit amet</p>
+              </li>
+              <li class="features-item">
+                <img src="./icons/Check.svg" alt="Feature name">
+                <p class="text-md">Lorem ipsum dolor sit amet</p>
+              </li>
+            </ul>
+            <div class="cta">
+                <a href="./lead-form.html" class="button-cta small">Inscripción</a>
+            </div>
+          </div> -->
+          <!-- </div>
+        </div>
+       </section> -->
+      <!-- End of Pricing section -->
 
       <!-- section License -->
-       <section class="section license">
+       <section class="section license" id="license">
         <div class="container">
           <div class="two-columns-wrapper">
 
             <div class="text-section">
-             
-              <h4 class="display-md">Nuestra Licencia y Cumplimiento</h4>
-              <p class="text">Operamos bajo una licencia regulada que garantiza que todas nuestras actividades cumplan con los más altos estándares de seguridad y transparencia.
-              </br></br>Nuestro compromiso con el cumplimiento normativo protege tus inversiones y asegura que operas en un entorno financiero seguro y confiable.</p>
-              <a href="./lead-form.html" class="button-cta">Conoce Más <img src="./icons/arrow-right.svg" alt="button"></a>
+              <div class="badge">
+                <p class="text-sm">Licencia estatal</p>
+              </div>
+              <h4 class="display-md">Nuestro producto ha sido aprobado oficialmente por el Gobierno.</h4>
+              <p class="text">Hemos sido autorizados por el Estado para confirmar la seguridad de sus fondos. 
+              </p>
+              <a href="./lead-form.html" class="button-cta">Inscripción <img src="./icons/arrow-right.svg" alt="button"></a>
             </div>
 
-            <div class="img-wrapper img-wrapper"> 
-              <img src="./images/2222.png" alt="section image">
+            <div class="img-wrapper"> 
+              <img src="./images/license.jpg" alt="section image">
             </div>
           </div>
         </div>
@@ -369,35 +527,37 @@
       <!-- End of section License -->
 
        <!-- Testimonals section -->
-       <section class="section testimonals">
+       <section class="section testimonals" id="reviews">
         <div class="container">
           <div class="text-section">
-            
-            <h4 class="display-md">Testimonios de Nuestros Clientes</h4>
-            <p class="text">Lo que nuestros usuarios dicen sobre su experiencia con nuestra plataforma.</p>
+            <div class="badge">
+              <p class="text-sm">Testimonios</p>
+            </div>
+            <h4 class="display-md">Éxitos reales</h4>
+            <p class="text">Estos testimonios ponen de relieve cómo el Arbitraje Automático AI puede conducir a cambios positivos significativos en la vida de muchas familias canadienses.</p>
           </div>
 
           <div class="testimonials-carousel">
             <!-- 1 -->
             <div class="testimonials-card">
               <img class="avatar" src="./images/Avatar.png" alt="Avatar">
-              <p class="card-text">Gracias a la plataforma, he podido diversificar mis inversiones y obtener excelentes resultados. La interfaz es fácil de usar y el soporte es increíble.</p>
-              <p class="text-lg card-name">Ana Gómez</p>
-              <p class="text-md caption">Profesor</p>
+              <p class="card-text">Nulla sed diam ornare, porta risus ut, hendrerit nibh. Cras sit amet accumsan velit, et iaculis justo. Maecenas elementum eros vitae purus aliquam, vel pretium odio efficitur.</p>
+              <p class="text-lg card-name">Name Surname</p>
+              <p class="text-md caption">Caption</p>
             </div>
             <!-- 2 -->
             <div class="testimonials-card">
               <img class="avatar" src="./images/Avatar.png" alt="Avatar">
-              <p class="card-text">La automatización del trading ha sido un cambio de juego para mí. Ahora puedo gestionar mis inversiones de manera más eficiente y segura.</p>
-              <p class="text-lg card-name">Carlos Rodríguez</p>
-              <p class="text-md caption">Soldador</p>
+              <p class="card-text">Nulla sed diam ornare, porta risus ut, hendrerit nibh. Cras sit amet accumsan velit, et iaculis justo. Maecenas elementum eros vitae purus aliquam, vel pretium odio efficitur.</p>
+              <p class="text-lg card-name">Name Surname</p>
+              <p class="text-md caption">Caption</p>
             </div>
             <!-- 3 -->
             <div class="testimonials-card">
               <img class="avatar" src="./images/Avatar.png" alt="Avatar">
-              <p class="card-text">La asesoría personalizada me ha ayudado a entender mejor el mercado y a tomar decisiones informadas. Recomiendo esta plataforma a todos los inversionistas.</p>
-              <p class="text-lg card-name">María Fernández</p>
-              <p class="text-md caption">Agricultor</p>
+              <p class="card-text">Nulla sed diam ornare, porta risus ut, hendrerit nibh. Cras sit amet accumsan velit, et iaculis justo. Maecenas elementum eros vitae purus aliquam, vel pretium odio efficitur.</p>
+              <p class="text-lg card-name">Name Surname</p>
+              <p class="text-md caption">Caption</p>
             </div>
           </div>
         </div>
@@ -446,7 +606,18 @@
           </div>
           <p class="text-md">Cras non lacus ultricies, euismod leo et, pulvinar tellus. Integer porta congue diam non sollicitudin.</p>
         </div>
-        
+        <!-- footer navigation block -->
+        <div class="footer-nav">
+          <div class="group">
+            <a class="footer-navigation-link" href="#">Menu item</a>
+            <a class="footer-navigation-link" href="#">Menu item</a>
+            <a class="footer-navigation-link" href="#">Menu item</a>
+          </div>
+          <div class="group">
+            <a class="footer-navigation-link" href="#">Menu item</a>
+            <a class="footer-navigation-link" href="#">Menu item</a>
+            <a class="footer-navigation-link" href="#">Menu item</a>
+          </div>
         </div>
       </div>
       <!-- copyright block -->
@@ -479,6 +650,6 @@
     })
     </script>
     <!-- Our script -->
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js?ver=1.1"></script>
   </body>
 </html>

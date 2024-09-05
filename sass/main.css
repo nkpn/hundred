@@ -372,6 +372,9 @@ header {
   background-color: #ffffff;
   border-bottom: 1px solid #F2F4F7;
   overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 header .header-container {
   display: flex;
@@ -386,20 +389,19 @@ header .header-container {
   }
 }
 header .header-logo {
-  padding: 24px 0;
+  padding: 12px 0;
 }
-@media screen and (min-width: 1024px) {
-  header .header-logo {
-    padding: 32px 0;
-  }
+header .header-logo img {
+  width: 64px;
+  height: 64px;
 }
 header .mobile-menu {
   display: none;
   position: fixed;
-  top: 73px;
+  top: 94px;
   left: 0;
   width: 100%;
-  height: calc(100% - 73px);
+  height: calc(100% - 94px);
   z-index: 100;
   flex-direction: column;
   gap: 32px;
@@ -541,7 +543,7 @@ footer .footer-info {
 }
 @media screen and (min-width: 768px) {
   footer .footer-info {
-    margin: 64px 0 0;
+    margin: 64px 0;
   }
 }
 footer .footer-info p {
@@ -777,6 +779,7 @@ h2,
   background-color: #4E6CFF;
   color: #ffffff;
   text-align: center;
+  text-wrap: nowrap;
 }
 .button-cta:hover, .button-cta:focus {
   background-color: #7088FF;
@@ -931,6 +934,18 @@ input.calculator-slider::-moz-range-thumb {
   }
 }
 
+video {
+  border-radius: 16px;
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 1024px) {
+  video {
+    border-radius: 44px;
+    border: 2px solid #000;
+  }
+}
+
 .four-columns {
   display: grid;
   gap: 32px;
@@ -997,6 +1012,12 @@ input.calculator-slider::-moz-range-thumb {
 .img-wrapper img {
   display: block;
   box-shadow: 0px 32px 64px -12px rgba(16, 24, 40, 0.14);
+  max-height: 500px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .img-wrapper img {
+    width: auto;
+  }
 }
 
 .icon-wrapper {
@@ -1078,6 +1099,9 @@ input[type=phone] {
 }
 .hero .hero-img-wrapper {
   margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .hero .hero-img-wrapper {
@@ -1492,6 +1516,10 @@ input[type=phone] {
   .license .two-columns-wrapper {
     gap: 148px;
   }
+}
+.license img {
+  margin: auto;
+  width: auto;
 }
 .license .text-section {
   align-items: center;

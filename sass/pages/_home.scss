@@ -5,6 +5,9 @@
 
     .hero-img-wrapper {
         margin-top: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         @media screen and (min-width: $tablet) {
             padding: 0 48px;
@@ -460,6 +463,11 @@
         @media screen and (min-width:$desktop-large) {
            gap: 148px;
         }
+    }
+
+    img{
+        margin: auto;
+        width: auto;
     }
 
     .text-section {

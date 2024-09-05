@@ -22,7 +22,56 @@
 
   <body class="page lead-form-page">
     <!-- HEADER  -->
-    
+    <header>
+      <div class="container header-container">
+        <!-- Desktop header -->
+        <div class="logo header-logo">
+            <a href="./index.html">
+              <img src="./images/logo.png">
+            </a>
+        </div>
+        <nav class="desktop-navigation">
+            <a class="navigation-link new-page" href="index.html#about-us">Nosotros</a>
+            <a class="navigation-link new-page" href="index.html#features">Ventajas</a>
+            <a class="navigation-link new-page" href="index.html#calculator">Calculadora</a>
+            <a class="navigation-link new-page" href="index.html#manual">Capacidades</a>
+            <a class="navigation-link new-page" href="index.html#license">Licencia</a>
+            <a class="navigation-link new-page" href="index.html#reviews">Reseñas</a>
+            <a class="navigation-link new-page" href="./lead-form.html">Registro</a>
+        </nav>
+        <div class="desktop-cta">
+            <a href="./lead-form.html" class="button-cta small">Inscripción <img src="./icons/arrow-right.svg" alt="button"></a>
+        </div>
+        <div class="mobile-menu-icon">
+          <input type="checkbox" id="toggle">
+          <label for="toggle"></label>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+          <nav class="mobile-navigation">
+            <a class="navigation-link new-page" href="index.html  #about-us">Nosotros</a>
+            <a class="navigation-link new-page" href="index.html#features">Ventajas</a>
+            <a class="navigation-link new-page" href="index.html#calculator">Calculadora</a>
+            <a class="navigation-link new-page" href="index.html#manual">Capacidades</a>
+            <a class="navigation-link new-page" href="index.html#license">Licencia</a>
+            <a class="navigation-link new-page" href="index.html#reviews">Reseñas</a>
+            <a class="navigation-link new-page" href="./lead-form.html">Registro</a>
+          </nav>
+          <div class="mobile-menu-footer">
+            <div class="logo header-logo">
+              <a href="./index.html">
+                <img src="./images/logo.png">
+              </a>
+            </div>
+            <p class="text-md">Cras non lacus ultricies, euismod leo et, pulvinar tellus. Integer porta congue diam non sollicitudin.</p>
+            <p class=" text-md rights-text">© 2077 Untitled UI. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+  </header>
+    <!-- END OF HEADER -->
+
     <main>
         <section class="section lead-form">
             <div class="container">
@@ -39,10 +88,7 @@
                         <div>
                             <form class="cta-form" action="#" method="post">
                                 <label for="name" class="text-sm">Name</label>
-                                <input type="text" id="name" name="name" placeholder="Your Name">
-                                
-                                 <label for="name" class="text-sm">Surname</label>
-                                <input type="text" id="surname" name="surname" placeholder="Your Surname">
+                                <input type="text" id="name" name="name" placeholder="Your name">
                                 
                                 <label for="email" class="text-sm">Email</label>
                                 <input type="email" id="email" name="email" placeholder="you@company.com">
@@ -65,7 +111,39 @@
       <img src="./icons/arrow-up.svg" alt="Scroll to top">
    </div>
     
-    
+    <!-- FOOTER -->
+    <footer>
+      <div class="container two-columns-wrapper">
+        <!-- Info block -->
+        <div class="footer-info">
+          <div class="logo footer-logo">
+            <a href="./index.html">Company logo</a>
+          </div>
+          <p class="text-md">Cras non lacus ultricies, euismod leo et, pulvinar tellus. Integer porta congue diam non sollicitudin.</p>
+        </div>
+        <!-- footer navigation block -->
+        <div class="footer-nav">
+          <div class="group">
+            <a class="footer-navigation-link" href="#">Menu item</a>
+            <a class="footer-navigation-link" href="#">Menu item</a>
+            <a class="footer-navigation-link" href="#">Menu item</a>
+          </div>
+          <div class="group">
+            <a class="footer-navigation-link" href="#">Menu item</a>
+            <a class="footer-navigation-link" href="#">Menu item</a>
+            <a class="footer-navigation-link" href="#">Menu item</a>
+          </div>
+        </div>
+      </div>
+      <!-- copyright block -->
+      <div class="footer-copyright">
+        <div class="container">
+          <p class="text-md">© 2024 Company name. All rights reserved.</p>
+        </div>
+      </div>
+      
+      
+    </footer>
     <!-- END OF FOOTER -->
   </head>
   <!-- Slick slider init -->
